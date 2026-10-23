@@ -1,0 +1,60 @@
+--- weapon
+PASS  free roam: on foot, crime systems on, pistol holstered 12/48, no weapon HUD
+PASS  holstered: left-drag still turns the camera and fires nothing  (Δyaw -0.83)
+PASS  1: drawing — gun in the hand, holster-reach pose
+PASS     then ready: weapon HUD and hip crosshair, low-ready pose, gun visible in the hand  ({"aim":0,"lowReady":1,"reload":0,"crouch":0,"gunInHand":true,"gunVisible":true})
+PASS     the key hint switches to the weapon controls  (Right mouse aim · Left mouse fire · R reload · 1 holster · C crouch · WASD move · Esc pause)
+PASS  right mouse: aiming — tight spread, aim pose (arm raised), over-the-shoulder camera  (aim 1.00)
+PASS     the aim view is roughly level (not at the pavement)  (dir y -0.07)
+PASS  left mouse while aiming (mouse chord): one round fired, magazine 11  (world at 9.5 m)
+PASS     the shot travels forward (hits beyond 8 m or nothing in range)  (9.5 m)
+PASS  holding the trigger fires semi-automatically at the cycle rate  (6 shots)
+PASS  R: reloading (reload pose)  (reloading 0.64)
+PASS     magazine refilled from the reserve  (12/42)
+PASS  C: crouch (pose blended in)
+PASS     C again: stand up
+PASS  1 again: holstered, HUD and crosshair hidden
+--- pedestrians
+PASS  aiming at a pedestrian: the crosshair turns on-target
+PASS     people nearby react: flee / surrender / call the police  ({"flees":11,"surrenders":3,"calls":2})
+PASS  shooting a pedestrian: knocked down (no injury detail), assault reported, wanted  (ped stars 1)
+PASS     the knocked-down person is in the Down state
+FAIL     and gets back up later (nobody stays down)  (down 1)
+PASS  wanted went up from the shooting  (0 → 1)
+FAIL  restarting free roam clears the wanted level and resets the loadout
+--- parked car
+PASS  a parked car stands at the kerb nearby  (atlas at 112 m)
+PASS  at its door the prompt offers to steal it  (Steal car)
+PASS  E: in the stolen car, driving it (a world car, not the owned one)
+PASS     the owned car stays where it was, still in the world
+PASS  W drives the stolen car  (27.2 m, 16.6 m/s)
+FAIL  E: out of the stolen car again; it stays in the world as "taken"
+PASS     the owned car still has not moved
+FAIL  at the owned car the prompt says "Get in your car"  (null)
+FAIL  E: back in the owned car (no theft counted)
+--- carjack
+PASS  found a slow occupied traffic car
+FAIL  next to a car with a driver: the prompt says to aim at the driver  (Get out)
+FAIL  aiming at the driver makes the car stop
+FAIL     the driver gets out with their hands up (carjack reported, wanted)  ({"carjacks":0,"drivers":0,"surrender":0,"stars":1})
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at shot (/home/user/city-racer/scripts/crime-qa.mjs:37:14)
+    at async file:///home/user/city-racer/scripts/crime-qa.mjs:254:3 {
+  log: [
+    '  - taking page screenshot',
+    '  - waiting for fonts to load...',
+    '  - fonts loaded'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v20.20.2

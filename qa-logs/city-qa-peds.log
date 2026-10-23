@@ -1,0 +1,15 @@
+PASS  pedestrians are drawn near the player  (23 visible, nearest 14.5 m)
+PASS  crowd is GPU-instanced: all visible pedestrians in ≤ 2 instanced draws  (pedestrians-near ×6 (shadow), pedestrians-far ×17)
+PASS  crowd shows several outfits from the atlas  (6 outfits)
+PASS  pedestrian poses animate over time  (23/23 changed in 5 s real time)
+PASS  free roam: pedestrians populate the sidewalks  (24 pedestrians)
+PASS  pedestrians never stand inside a building (2 min, sampled every 10 s)  (0)
+PASS  pedestrians are only on the road when using a crossing  (0 sampled, 0 counted)
+PASS  pedestrians walk and keep walking  (24/24 moving)
+PASS  signals: crossings only on WALK, road clear before cars get green  (5 crossings started, 0 bad, 0 at green)
+PASS  pedestrians keep clear of furniture and each other  (clear 0.28 m, sep 0.75 m at modes 4/1 lat 8.00/8.75 far true/true s 140.6/140.5)
+PASS  missions run without pedestrians  (0)
+PASS  no console errors or warnings  (none)
+
+12 passed, 0 failed
+CITY QA PASSED

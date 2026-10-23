@@ -1,0 +1,24 @@
+(min  10) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 30.1 km/h  crossings 12  red stops 142  laps 2  heap 24.7 MB  wall 4 s
+(min  20) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 36.0 km/h  crossings 37  red stops 304  laps 4  heap 24.8 MB  wall 7 s
+(min  30) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 41.6 km/h  crossings 40  red stops 409  laps 6  heap 24.8 MB  wall 10 s
+(min  40) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.1 km/h  crossings 51  red stops 533  laps 9  heap 24.8 MB  wall 13 s
+(min  50) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 36.3 km/h  crossings 67  red stops 698  laps 11  heap 24.8 MB  wall 16 s
+(min  60) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 36.2 km/h  crossings 84  red stops 836  laps 13  heap 24.8 MB  wall 19 s
+
+60 simulated minutes, 13 player laps of the loop, 19 s wall time
+PASS  no NaN / infinite positions or speeds (cars, pedestrians)  (none)
+PASS  no two traffic cars ever overlap  (0 samples)
+PASS  traffic stays on the carriageway  (0 samples)
+PASS  no red-light violations; pedestrians follow the crossing rules  (violations 0, bad starts 0, off-crossing 0, on road at green 0)
+PASS  no gridlock: no car stands still for more than 60 s  (longest stop 24.0 s)
+PASS  no pedestrian stuck for over 45 s  (longest stand 8.5 s)
+PASS  pedestrians never brush into lamps, trees, poles or props  (min clearance 0.116 m)
+PASS  population maintained around the player in every phase  (min 15 cars, 23 pedestrians (30 s into a phase))
+PASS  traffic flow does not degrade over the session  (first 10 min 35.4 km/h, last 10 min 36.0 km/h)
+PASS  pedestrians keep crossing throughout  (40 in the first half, 44 in the second)
+PASS  object pools do not grow (cars, pedestrians)  (cars 18 -> 18, peds 24 -> 24)
+PASS  no physics body / collider leak  (bodies 73 -> 73 (max 73), colliders 97 -> 97 (max 97))
+PASS  heap stable after warm-up (10 min -> end, after GC)  (24.7 MB -> 24.7 MB (-0.02 MB))
+(info) red stops 836, lane changes 1136, crossings 85/84, dodges 0, min car gap 2.31 m, min ped clearance 0.12 m
+
+SOAK TEST PASSED

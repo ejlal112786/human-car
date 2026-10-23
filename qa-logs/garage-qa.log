@@ -1,0 +1,22 @@
+PASS  garage: four cars listed, starter car marked as driving  (4 cards, driving "Kestrel GT")
+PASS  garage: stats, upgrades and paint shown for the owned car
+PASS  garage: browsing a car previews its body on the stage without changing the driven car  (style hatch, driving kestrel)
+PASS  garage: unaffordable car shows how many credits are missing (buy disabled)  (3,000 cr short)
+PASS  garage: star-locked car explains the requirement  (Needs 6 ★ · you have 0)
+PASS  leaving the garage puts the driven car back on the stage  (coupe)
+PASS  buying a car: credits charged, car owned, selected and driving with its own handling  (vehicle pip, mass 1080, credits 37000)
+PASS  purchase saved to both the main save and its backup
+PASS  engine upgrade: charged, level shown, and the car really gets stronger  (drive force 7000 → 7420, credits 35950)
+PASS  paint applies to this car only
+PASS  switching between owned cars swaps handling, body and paint
+PASS  after a reload the bought car, its upgrade and paint are still there  (vehicle pip, credits 35950)
+PASS  corrupted save: progress recovered from the backup copy
+PASS  unreadable saves: the game still starts with a clean starter profile
+PASS  in a mission the cars accelerate differently (Vortex > Kestrel > Pip after 3 s full throttle)  (Pip 62, Kestrel 74, Vortex 102 km/h)
+PASS  phone portrait: garage fits the screen width, buttons large enough to tap  ({"panelW":370,"left":10,"right":380,"minH":38,"docW":390})
+PASS  phone portrait: upgrade button works by touch  (tyres 1)
+PASS  no console errors or warnings  (none)
+
+18 passed, 0 failed
+CITY QA PASSED
+EXIT 0

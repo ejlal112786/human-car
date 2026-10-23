@@ -1,0 +1,10 @@
+city EXIT 0
+browser EXIT 0
+mobile EXIT 0
+release EXIT 0
+resources EXIT 0
+layout EXIT 0
+monkey-s7 EXIT 0
+monkey-touch-s3 EXIT 0
+monkey-touch-s5 EXIT 0
+CHAIN DONE

@@ -1,0 +1,59 @@
+--- structure and progression
+PASS  7 events in 3 tiers
+PASS  ids unique and save-safe
+PASS  every event is a playable level type with gates and star times
+PASS  rewards and star requirements rise through the series
+PASS  each event requires the previous one
+PASS  timed events: star times inside the limit
+PASS  star requirements are reachable before each event  (max 21)
+PASS  new save: only the first event is open
+PASS  locked events explain why
+PASS  first clear pays the full reward and opens the next event  (900 cr, unlocked Rookie Cup)
+PASS  3 career stars open the Pro tier
+PASS  cleared but short of stars: the next event says how many are needed  (Needs 5 career stars (you have 4))
+PASS  replay with a better result: best time + stars kept, 30 % pay + new-star bonus  (870 cr)
+PASS  a worse replay keeps the best result
+PASS  unknown event / bad time is rejected
+PASS  corrupt career entries are dropped on load, valid ones kept
+
+--- city markers
+FAIL  every career event has a city marker, ≥ 40 m from any other marker  (closest 2 m: career-foundry-attack / mission-11)
+PASS  no start grid or player start inside the permanent work zone
+
+--- drivability and difficulty (AI drivers, real physics)
+PASS  Harbor Sprint: an average driver in the stock car makes the time limit  (23.7 s / 46 s)
+PASS  Harbor Sprint: limit and star times leave human margin over the ideal AI lap (≥ 1.4× / ≥ 1.15×)  (AI Kestrel 23.2 s vs limit 46; AI Vortex L3 20.2 s vs 3★ 34)
+PASS  Rookie Cup: all rivals finish  (79.3 / 77.7)
+PASS  Rookie Cup: winnable with a human margin — kestrel L0 ≥ 12.0 % slower than its ideal AI lap still finishes ahead of position 2  (69.7 s vs 79.3 s (13.8 %))
+PASS  Rookie Cup: race stars mean something — 2★ only by beating the rival's time, 3★ ≥ 2 % faster, still reachable  (stars 75 / 79, rival 79.3, ideal best car 60.9)
+PASS  Foundry Time Attack: an average driver in the stock car makes the time limit  (37.2 s / 60 s)
+PASS  Foundry Time Attack: limit and star times leave human margin over the ideal AI lap (≥ 1.4× / ≥ 1.15×)  (AI Kestrel 35.6 s vs limit 60; AI Vortex L3 30.7 s vs 3★ 46)
+PASS  Pro Duel: all rivals finish  (73.9)
+PASS  Pro Duel: winnable with a human margin — kestrel L1 ≥ 7.0 % slower than its ideal AI lap still finishes ahead of position 1  (68.8 s vs 73.9 s (7.4 %))
+PASS  Pro Duel: race stars mean something — 2★ only by beating the rival's time, 3★ ≥ 2 % faster, still reachable  (stars 70.5 / 73, rival 73.9, ideal best car 60.8)
+PASS  Grand Loop: an average driver in the stock car makes the time limit  (72.0 s / 98 s)
+PASS  Grand Loop: limit and star times leave human margin over the ideal AI lap (≥ 1.4× / ≥ 1.15×)  (AI Kestrel 69.1 s vs limit 98; AI Vortex L3 60.4 s vs 3★ 80)
+PASS  Elite Night Run: all rivals finish  (71.6 / 70.6 / 70.8)
+PASS  Elite Night Run: winnable with a human margin — kestrel L3 ≥ 5.0 % slower than its ideal AI lap still finishes ahead of position 1  (66.8 s vs 70.6 s (5.6 %))
+PASS  Elite Night Run: race stars mean something — 2★ only by beating the rival's time, 3★ ≥ 2 % faster, still reachable  (stars 68.5 / 70, rival 70.6, ideal best car 60.7)
+PASS  City Championship: all rivals finish  (68.2 / 68.3 / 70.4)
+PASS  City Championship: winnable with a human margin — vortex L0 ≥ 7.0 % slower than its ideal AI lap still finishes ahead of position 1  (62.9 s vs 68.2 s (8.3 %))
+PASS  City Championship: winnable with a human margin — kestrel L3 ≥ 1.5 % slower than its ideal AI lap still finishes ahead of position 1  (66.9 s vs 68.2 s (1.9 %))
+PASS  City Championship: race stars mean something — 2★ only by beating the rival's time, 3★ ≥ 2 % faster, still reachable  (stars 66.5 / 67.8, rival 68.2, ideal best car 60.8)
+harbor-sprint    checkpoints 0.60 km  limit 46  stars 34,40  | AI Kestrel .85 23.7  1.0 23.2  Vortex L3 1.0 20.2
+rookie-cup       race        1.99 km  limit -  stars 75,79  | AI Kestrel .85 72.6  1.0 69.7  Vortex L3 1.0 60.9  | rivals 79.3 / 77.7
+    ↳ needs ≤ 79.3 s: margins kestrel L0 13.8 % (≥ 12.0 %); Vortex L3 30.2 %, stock 13.8 %
+foundry-attack   timetrial   0.97 km  limit 60  stars 46,53  | AI Kestrel .85 37.2  1.0 35.6  Vortex L3 1.0 30.7
+pro-duel         race        1.99 km  limit -  stars 70.5,73  | AI Kestrel .85 72.5  1.0 69.7  Vortex L3 1.0 60.8  | rivals 73.9
+    ↳ needs ≤ 73.9 s: margins kestrel L1 7.4 % (≥ 7.0 %); Vortex L3 21.5 %, stock 6.0 %
+grand-loop       timetrial   1.97 km  limit 98  stars 80,88  | AI Kestrel .85 72.0  1.0 69.1  Vortex L3 1.0 60.4
+elite-race       race        1.99 km  limit -  stars 68.5,70  | AI Kestrel .85 72.3  1.0 69.4  Vortex L3 1.0 60.7  | rivals 71.6 / 70.6 / 70.8
+    ↳ needs ≤ 70.6 s: margins kestrel L3 5.6 % (≥ 5.0 %); Vortex L3 16.3 %, stock 1.7 %
+championship     race        1.99 km  limit -  stars 66.5,67.8  | AI Kestrel .85 72.5  1.0 69.5  Vortex L3 1.0 60.8  | rivals 68.2 / 68.3 / 70.4
+    ↳ needs ≤ 68.2 s: margins vortex L0 8.3 % (≥ 7.0 %), kestrel L3 1.9 % (≥ 1.5 %); Vortex L3 12.1 %, stock -1.9 %
+PASS  timed events demand an ever higher average speed  (47 km/h → 58 km/h → 72 km/h)
+PASS  the fastest rival gets faster race by race  (92 km/h → 97 km/h → 101 km/h → 105 km/h)
+PASS  rival AI stays on the road in every career race (no spins, no recoveries)  (worst 5.25 m from the centre line (Onyx (elite-race)), 0 recoveries)
+PASS  the final is out of reach in the stock starter car (needs a lap within 1.5 % of perfect)  (69.5 s vs best rival 68.2 s (-1.9 %))
+
+1 CHECK(S) FAILED

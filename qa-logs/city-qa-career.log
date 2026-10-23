@@ -1,0 +1,22 @@
+PASS  Career screen: 7 events in 3 tiers, only the first open, locked ones say why  (7 cards, 1 open, "Clear Harbor Sprint first")
+PASS  Career screen shows credits, rewards and star total; no debug text
+PASS  event briefing: career tier, reward, limit, star times; the city previews the event layout  (briefing, id harbor-sprint)
+PASS  briefing Back returns to the Career screen
+PASS  Escape = Back: briefing → Career → title (state back to menu)  (career → title)
+PASS  Start event: on foot at the event, career run active, police off  (onFoot harbor-sprint)
+PASS  driving through every checkpoint completes the event  (6/6 gates (6), complete)
+PASS  result: stars, credits paid and saved, next event unlocked  (stars 3, credits 2800)
+PASS  Next event opens the Rookie Cup briefing with rivals and their cars  (Dash (Kestrel GT), Rook (Kestrel GT))
+PASS  career progress and credits survive a reload  (credits 2800)
+PASS  rivals drive their catalogue cars
+PASS  finishing 3rd in the Rookie Cup fails: "top 2 needed"  (failed "You finished 3rd — top 2 needed")
+PASS  Pro Duel open (replay); its rival races a Brute; Grand Loop asks for 8 stars  ({"car":"brute","style":"muscle"} "Needs 8 career stars (you have 7)")
+PASS  pause → Quit from a career event: back on the title, career run cleared  (title, id null)
+PASS  free roam: the pooled cars are stock patrol cars again  ([{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"}])
+PASS  career markers in the city: locked one explains, open one starts the briefing with E  ("Elite Night Run: Locked — Clear Grand Loop first" / "Enter Harbor Sprint (Career · Rookie sprint)" → briefing)
+PASS  phone: Career list fits the screen width and scrolls vertically  ({"w":358,"sw":356,"cw":356,"sh":1167,"ch":810,"vw":390})
+PASS  phone: touch "Start" at a career marker opens the briefing; tapping Start event begins it  (label Start, screen briefing, state onFoot, career harbor-sprint)
+PASS  no console errors or warnings  (none)
+
+19 passed, 0 failed
+CITY QA PASSED

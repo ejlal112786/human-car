@@ -1,0 +1,18 @@
+PASS  one POI per mission, the garage, and events  (mission-0,mission-1,mission-2,mission-3,mission-4,garage,ev)
+PASS  every POI is on the pavement beside its own stretch of road (not on the carriageway)
+PASS  POIs are far enough apart to tell which one you arrived at  (closest pair 23 m)
+PASS  garage is not on a pedestrian crossing
+PASS  short hop forwards: route goes forwards  (200 m)
+PASS  short hop backwards: route goes backwards (no lap round the city)
+PASS  route wraps across the start/finish seam  (steps 25)
+PASS  near the half-way point the previous direction is kept (no flip-flopping)  (fresh -1, kept 1)
+PASS  ...but switches when the other way is clearly shorter
+PASS  route to where you stand is zero length
+PASS  longest route is at most half the loop (+ hysteresis)
+PASS  route line starts at the player, ends at the POI, follows the road  (148 points, line 897 m vs road 880 m, max segment 7.2 m)
+PASS  route line stays on the road (every interior point within the carriageway)
+PASS  polyline never overflows its buffer
+PASS  heading hint: facing along the route → ahead, facing away → turn around
+PASS  arrival: inside the radius finds the POI, outside does not
+
+ALL NAVIGATION CHECKS PASSED

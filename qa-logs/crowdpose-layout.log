@@ -1,0 +1,10 @@
+PASS  1280×720: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  1024×768: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  960×540: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  844×390: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  740×360: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  390×844: every screen's closing actions visible without scrolling, every other action reachable  (10 screens, 22 buttons)
+PASS  no console errors or warnings  (none)
+
+7 passed, 0 failed
+LAYOUT QA PASSED

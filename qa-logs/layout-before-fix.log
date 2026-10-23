@@ -1,0 +1,10 @@
+FAIL  1280×720: every screen's action buttons are on screen and pressable without scrolling  (career: back "Back" @833–879; garage: back "Done" @945–991)
+FAIL  1024×768: every screen's action buttons are on screen and pressable without scrolling  (career: back "Back" @833–879; garage: back "Done" @945–991)
+FAIL  960×540: every screen's action buttons are on screen and pressable without scrolling  (career: back "Back" @827–873; briefing (career): cstart "Start event" @518–564; briefing (career): career "Back" @518–564; garage: back "Done" @939–985; settings: back "Done" @707–753)
+FAIL  844×390: every screen's action buttons are on screen and pressable without scrolling  (levels: back "Back" @451–491; briefing (mission): start "Start mission" @416–456; briefing (mission): levels "Back" @416–456; career: back "Back" @817–857; briefing (career): cstart "Start event" @508–548; briefing (career): career "Back" @508–548; garage: ? "Currently driving" @408–448; garage: back "Done" @932–972; settings: back "Done" @697–737)
+FAIL  740×360: every screen's action buttons are on screen and pressable without scrolling  (title: credits "Credits" @329–369; levels: back "Back" @451–491; briefing (mission): start "Start mission" @416–456; briefing (mission): levels "Back" @416–456; career: back "Back" @817–857; briefing (career): cstart "Start event" @508–548; briefing (career): career "Back" @508–548; garage: ? "Currently driving" @408–448; garage: back "Done" @932–972; settings: back "Done" @697–737)
+FAIL  390×844: every screen's action buttons are on screen and pressable without scrolling  (career: back "Back" @1002–1048; garage: ? "Currently driving" @808–854; garage: back "Done" @1487–1533; settings: back "Done" @810–856)
+PASS  no console errors or warnings  (none)
+
+1 passed, 6 failed
+LAYOUT QA FAILED

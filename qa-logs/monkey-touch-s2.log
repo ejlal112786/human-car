@@ -1,0 +1,157 @@
+  0 click free:Free Roam                             → onFoot
+  1 hold stick 227° 0.6s                             → onFoot
+  2 qa: to the car door + E                          → driving 0 km/h
+  3 hold left+handbrake+swipe 1.4s                   → driving 0 km/h
+  4 click pause:ESC                                  → paused/pause
+  5 click quit:Quit to menu                          → menu/title
+  6 tap 390,70                                       → menu/title
+  7 click credits:Credits                            → menu/credits
+  8 click back:Back                                  → menu/title
+  9 tap 620,230                                      → menu/title
+ 10 click settings:Settings                          → menu/settings
+ 11 click back:Done                                  → menu/title
+ 12 click credits:Credits                            → menu/credits
+ 13 click back:Back                                  → menu/title
+ 14 click garage:Garage                              → menu/garage
+ 15 click gview:Pip HatchCity hatchback3             → menu/garage
+ 16 click gview:Kestrel GTSports coupeDr             → menu/garage
+ 17 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 18 click back:Done                                  → menu/title
+ 19 tap 192,31                                       → menu/title
+ 20 click settings:Settings                          → menu/settings
+ 21 click back:Done                                  → menu/title
+ 22 click credits:Credits                            → menu/credits
+ 23 click back:Back                                  → menu/title
+ 24 click settings:Settings                          → menu/settings
+ 25 click back:Done                                  → menu/title
+ 26 click garage:Garage                              → menu/garage
+ 27 click gview:Pip HatchCity hatchback3             → menu/garage
+ 28 tap 443,187                                      → menu/garage
+ 29 click back:Done                                  → menu/title
+ 30 tap 168,293                                      → menu/settings
+ 31 click back:Done                                  → menu/title
+ 32 click credits:Credits                            → menu/credits
+ 33 click back:Back                                  → menu/title
+ 34 click career:Career                              → menu/career
+ 35 click back:Back                                  → menu/title
+ 36 click play:Play                                  → briefing/briefing
+ 37 click levels:Back                                → menu/levels
+ 38 click back:Back                                  → menu/title
+ 39 click settings:Settings                          → menu/settings
+ 40 click back:Done                                  → menu/title
+ 41 tap 435,269                                      → menu/credits
+ 42 click back:Back                                  → menu/title
+ 43 click credits:Credits                            → menu/credits
+ 44 click back:Back                                  → menu/title
+ 45 click credits:Credits                            → menu/credits
+ 46 click back:Back                                  → menu/title
+ 47 click free:Free Roam                             → onFoot
+ 48 hold stick 232°+swipe 0.4s                       → onFoot
+ 49 click pause:ESC                                  → paused/pause
+ 50 click restart:Restart                            → onFoot
+ 51 click mute:M                                     → onFoot
+ 52 hold stick 219°+jump 2.5s                        → onFoot
+ 53 click :Jump                                      → onFoot
+ 54 qa: to the car door + E                          → driving 0 km/h
+ 55 click mute:M                                     → driving 0 km/h
+ 56 hold brake+right+handbrake 1.2s                  → driving 0 km/h
+ 57 click map:N                                      → paused/map
+ 58 click mapdest:Mission 1: Find Your Rid           → driving 0 km/h
+ 59 hold gas+right 0.3s                              → driving 10 km/h
+ 60 hold brake+right+handbrake 1.2s                  → driving 0 km/h
+ 61 click mute:M                                     → driving 0 km/h
+ 62 tap mute:M                                       → driving 0 km/h
+ 63 click map:N                                      → paused/map
+ 64 click mapdest:                                   → driving 0 km/h
+ 65 hold gas+swipe 2.6s                              → driving 5 km/h
+ 66 hold gas+brake+right 1.7s                        → driving 0 km/h
+ 67 hold gas+swipe 1.3s                              → driving 0 km/h
+ 68 hold gas+brake+right+handbrake+swipe 2s          → driving 0 km/h
+ 69 hold gas+swipe 0.7s                              → driving 0 km/h
+ 70 hold gas 1.6s                                    → driving 0 km/h
+ 71 hold left 1.4s                                   → driving 0 km/h
+ 72 hold gas+brake+left 0.6s                         → driving 0 km/h
+ 73 click pause:ESC                                  → paused/pause
+ 74 click resume:Resume                              → driving 0 km/h
+ 75 hold gas+left 2.1s                               → driving 0 km/h
+ 76 hold brake+right+handbrake 2.5s                  → driving 0 km/h
+ 77 hold gas+left+right+handbrake+swipe 2.4s         → driving 0 km/h
+ 78 hold gas+swipe 2s                                → driving 0 km/h
+ 79 tap reset:R                                      → driving 0 km/h
+ 80 hold gas 2s                                      → driving 50 km/h
+ 81 hold gas+left+handbrake+swipe 0.3s               → driving 35 km/h
+ 82 hold gas+left+swipe 0.6s                         → driving 43 km/h
+ 83 hold gas+left+handbrake 1.5s                     → driving 3 km/h
+ 84 tap 550,81                                       → driving 3 km/h
+ 85 hold gas+left+right 1.1s                         → driving 17 km/h
+ 86 hold right 2.7s                                  → driving 0 km/h
+ 87 tap pause:ESC                                    → paused/pause
+ 88 click restart:Restart                            → onFoot
+ 89 click map:N                                      → paused/map
+ 90 click mapdest:                                   → onFoot
+ 91 click pause:ESC                                  → paused/pause
+ 92 click quit:Quit to menu                          → menu/title
+ 93 click settings:Settings                          → menu/settings
+ 94 click :High                                      → menu/settings
+ 95 tap 181,252                                      → menu/settings
+ 96 tap 629,158                                      → menu/settings
+ 97 tap 178,333                                      → menu/settings
+ 98 tap 291,114                                      → menu/settings
+ 99 tap 216,343                                      → menu/settings
+100 click back:Done                                  → menu/title
+101 click play:Play                                  → briefing/briefing
+102 click start:Start mission                        → onFoot
+103 qa: to the car door + E                          → driving 0 km/h
+104 hold gas+handbrake 1.3s                          → driving 0 km/h
+105 hold nothing 1.5s                                → driving 0 km/h
+106 tap 622,237                                      → driving 0 km/h
+107 hold swipe 1.7s                                  → driving 0 km/h
+108 hold left 1.8s                                   → driving 0 km/h
+109 hold brake 1.4s                                  → driving 14 km/h
+110 hold gas+brake 2.3s                              → driving 9 km/h
+111 hold gas 2.2s                                    → driving 63 km/h
+112 hold handbrake+swipe 1.1s                        → driving 31 km/h
+113 click pause:ESC                                  → paused/pause
+114 click settings:Settings                          → paused/settings
+115 click back:Done                                  → paused/pause
+116 click restart:Restart                            → onFoot
+117 hold stick 99°+swipe 0.8s                        → onFoot
+118 hold stick 85°+swipe 1.9s                        → onFoot
+119 hold stick 31°+swipe 1.6s                        → onFoot
+120 click map:N                                      → paused/map
+121 click back:Back to the game                      → onFoot
+122 hold stick 58°+swipe 2.1s                        → onFoot
+123 click :Run                                       → onFoot
+124 hold stick 251° 1.8s                             → onFoot
+125 hold stick 155°+jump+swipe 1.3s                  → onFoot
+126 hold stick 275°+jump 2.2s                        → onFoot
+127 hold stick 76° 0.4s                              → onFoot
+128 hold stick 45° 1.3s                              → onFoot
+129 hold stick 20° 0.3s                              → onFoot
+130 click pause:ESC                                  → paused/pause
+131 click quit:Quit to menu                          → menu/title
+132 click settings:Settings                          → menu/settings
+133 click back:Done                                  → menu/title
+134 click free:Free Roam                             → onFoot
+135 hold stick 278° 2.6s                             → onFoot
+136 hold stick 127°+jump+swipe 1.5s                  → onFoot
+137 hold stick 12°+swipe 2.1s                        → onFoot
+138 hold stick 87° 1.7s                              → onFoot
+139 hold stick 86° 2.4s                              → onFoot
+140 qa: to the car door + E                          → driving 0 km/h
+141 tap map:N                                        → paused/map
+142 tap 235,301                                      → paused/map
+143 click mapdest:                                   → driving 0 km/h
+144 hold gas 1.2s                                    → driving 30 km/h
+145 hold gas+left+right+handbrake+swipe 2.5s         → driving 0 km/h
+146 tap :Gas                                         → driving 0 km/h
+147 hold brake 0.6s                                  → driving 7 km/h
+148 tap map:N                                        → paused/map
+149 click mapclear:Clear route                       → driving 7 km/h
+
+seed 2, 150 steps, touch 740×360
+states: {"onFoot":30,"driving":49,"paused":16,"menu":53,"briefing":2}
+screens: {"pause":8,"title":24,"credits":7,"settings":14,"garage":7,"career":1,"briefing":2,"levels":1,"map":7}
+actions: {"hold":51,"tap":20,"click back":20,"click settings":7,"click pause":6,"click credits":6,"qa:":4,"click gview":4,"click map":4,"click mapdest":4,"click free":3,"click quit":3,"click restart":3,"click mute":3,"click ":3,"click garage":2,"click play":2,"click career":1,"click levels":1,"click resume":1,"click start":1,"click mapclear":1}
+
+MONKEY QA PASSED

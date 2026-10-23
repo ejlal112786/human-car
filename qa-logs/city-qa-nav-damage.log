@@ -1,0 +1,38 @@
+PASS  free roam: mission starts and the garage are marked in the city  (6 places)
+PASS  no marker is inside a building  (none)
+PASS  no prompt at the free-roam spawn point  (null)
+PASS  N opens the city map and pauses the game  (map paused canvas 568,346)
+PASS  map lists every destination with a tappable pin; locked missions say why  (6 pins, 6 entries, "Locked — complete Mission 2 first")
+PASS  choosing a destination closes the map, resumes play and plots a route  (state onFoot, dest garage, 151 route points)
+PASS  route starts at the player and ends at the garage
+PASS  HUD shows the destination and road distance  (▲Garage900 m)
+PASS  tapping the minimap opens the map
+PASS  Clear route removes the route and the HUD hint
+PASS  HUD map button + map pin also set the destination
+PASS  arriving clears the route  (dest null)
+PASS  stopped at the garage: prompt to open it  (Open garage)
+PASS  E opens the garage right there (game paused)
+PASS  city garage previews cars on the street
+PASS  Done returns to driving with the selected car  (driving coupe)
+PASS  driving away from the route shows "Turn around"; driving along it does not  (one way false, other way true)
+PASS  standing at an unlocked mission start offers to start it  (Start Mission 2: City Driving)
+PASS  E opens that mission's briefing
+PASS  a locked mission start says so and does nothing  (Mission 3 is locked)
+PASS  during a mission: no city markers, the map shows the objective without destinations
+PASS  Esc closes the map and resumes
+PASS  phone landscape: map button visible on the touch HUD  ({"x":106,"y":10,"width":40,"height":40})
+PASS  phone landscape: map fits the screen with a usable map area  ({"top":16,"bottom":374,"right":828,"canvasH":240,"docW":844})
+PASS  phone landscape: tapping a destination sets the route
+PASS  damage: the car starts undamaged
+PASS  a small knock (below ~11 km/h of impact) leaves no damage
+FAIL  driving into a building dents the front of the car  (no building found)
+PASS  a hard rear-right hit damages the rear and right side and breaks the right tail lamp  ({"front":0,"rear":0.43124999999999986,"left":0,"right":0.43124999999999986} {"headL":false,"headR":false,"tailL":false,"tailR":true})
+PASS  HUD shows the damage level  (DAMAGE 37%)
+PASS  a crushed nose costs engine power  (power ×0.75)
+PASS  garage offers a repair priced by the damage  (Your car is damaged · 84% Body work, lamps and engine restored REPAIR · 2,050 CR)
+PASS  repair charges credits and restores the car (body, lamps, power)  (5000 → 2950 cr)
+PASS  starting a mission gives a fresh, undamaged car  (before 53%)
+PASS  no console errors or warnings  (none)
+
+34 passed, 1 failed
+CITY QA FAILED

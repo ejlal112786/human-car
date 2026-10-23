@@ -1,0 +1,58 @@
+PASS  portrait title: all menu buttons fit the screen and are tall enough  ([[16,374,50],[16,374,46],[16,374,46],[16,374,46],[16,374,46],[16,374,46],[16,374,46]])
+PASS  tap Play opens the briefing
+PASS  touch controls visible on foot with the joystick layout  (onFoot foot true)
+PASS  keyboard hint hidden on touch devices
+PASS  portrait on foot: no control outside the screen  (6 boxes)
+PASS  portrait on foot: controls and HUD do not overlap  (none)
+PASS  portrait on foot: touch targets ≥ 44 px  (ok)
+PASS  portrait on foot: page cannot scroll  ([false,false,0,0])
+PASS  joystick drag up → forward input  (joy 0.00, 1.00)
+PASS  diagonal joystick magnitude capped at 1  (1.00)
+PASS  run button works while the joystick is held (multitouch)
+PASS  character runs from touch input  (5.40)
+PASS  camera look drag with another finger while moving  (yaw Δ -0.67)
+PASS  lifting the finger returns the joystick to neutral
+PASS  character stops after release  (0.00)
+PASS  touchcancel releases the joystick  (before 0.84,0.00 → after 0.00,0.00)
+PASS  touch interact button appears next to the car  (ENTER)
+PASS  tapping Enter gets in → driving layout  (driving drive)
+PASS  portrait driving: no control outside the screen  (10 boxes)
+PASS  portrait driving: controls and HUD do not overlap  (none)
+PASS  portrait driving: touch targets ≥ 44 px  (ok)
+PASS  portrait driving: page cannot scroll  ([false,false,0,0])
+PASS  gas + steer held simultaneously  (throttle 1, steer 1)
+PASS  car accelerates from touch pedals  (34.34 km/h)
+PASS  releasing the steer finger releases only steering
+PASS  releasing the gas finger releases throttle
+PASS  brake + handbrake held together
+PASS  touchcancel releases every pedal
+PASS  Exit button shown when slow  (EXIT)
+PASS  exit via touch returns to the joystick layout
+PASS  input held across the layout switch is released  ({"left":0,"right":0,"gas":0,"brake":0,"handbrake":0})
+PASS  HUD pause button pauses
+PASS  Resume restores the touch layout
+PASS  landscape on foot: no control outside the screen  (7 boxes)
+PASS  landscape on foot: controls and HUD do not overlap  (none)
+PASS  landscape on foot: touch targets ≥ 44 px  (ok)
+PASS  landscape on foot: page cannot scroll  ([false,false,0,0])
+PASS  landscape driving view: road renders as asphalt (no ground showing through)  (0.0% green)
+PASS  landscape driving: no control outside the screen  (10 boxes)
+PASS  landscape driving: controls and HUD do not overlap  (none)
+PASS  landscape driving: touch targets ≥ 44 px  (ok)
+PASS  landscape driving: page cannot scroll  ([false,false,0,0])
+PASS  pause panel fits the landscape screen  ([42,348,390])
+PASS  tablet driving: no control outside the screen  (10 boxes)
+PASS  tablet driving: controls and HUD do not overlap  (none)
+PASS  tablet driving: touch targets ≥ 44 px  (ok)
+PASS  tablet driving: page cannot scroll  ([false,false,0,0])
+PASS  tablet portrait driving: no control outside the screen  (10 boxes)
+PASS  tablet portrait driving: controls and HUD do not overlap  (none)
+PASS  tablet portrait driving: touch targets ≥ 44 px  (ok)
+PASS  tablet portrait driving: page cannot scroll  ([false,false,0,0])
+PASS  page does not scroll programmatically or by gesture  ([0,0])
+PASS  touch-action: none on body and canvas (no pinch / pan gestures)  (none, none)
+PASS  viewport: no user scaling, viewport-fit=cover (safe areas)  (width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover)
+PASS  no console errors or warnings  (none)
+
+55 passed, 0 failed
+MOBILE QA PASSED

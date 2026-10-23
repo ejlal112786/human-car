@@ -1,0 +1,52 @@
+PASS  no save: fresh progress with the starter car
+PASS  corrupted main save: recovered from the backup copy  (backup 4321)
+PASS  ...and the main save is repaired
+PASS  v1 save migrates (missions, stars, paint kept)  (v1 unlocked 6 stars 3 paint blue)
+PASS  ...and is written as v2
+PASS  new-layout save: unlocked count clamped to the 15 missions
+PASS  garbage: unknown cars dropped, duplicates removed, starter always owned  (kestrel,vortex)
+PASS  garbage: numbers clamped (credits, levels, upgrades, stars)  ({"engine":3,"tyres":0,"brakes":1,"suspension":0})
+PASS  garbage: invalid paint / car / ids / times rejected
+PASS  non-object saves give a fresh start
+PASS  storage full / blocked: saving fails silently
+PASS  cannot buy without credits
+PASS  star requirement blocks the Brute V8 (6 stars) even with credits
+PASS  buying the Pip GTi: credits deducted, car owned and selected
+PASS  cannot buy a car twice
+PASS  switching cars restores each car's own paint
+PASS  cannot select a car you do not own
+PASS  engine upgrade costs credits and raises the level  (price 1050)
+PASS  upgrades stop at level 3
+PASS  cannot upgrade a car you do not own
+PASS  a car's factory paint is always available for it
+PASS  locked paint (needs stars) is refused; unlocked paint applies to that car only
+PASS  suspension upgrade is sold like the others  (price 650)
+PASS  new car starts on its factory parts  ({"wheels":"five","spoiler":"roof","kit":"stock"})
+PASS  buying + fitting a part: price charged once, part owned and fitted  (price 650)
+PASS  refitting factory or owned parts is free
+PASS  parts belong to one car (the Kestrel does not own the Pip's wheels)
+PASS  parts cannot be fitted to a car you do not own
+PASS  unknown part refused
+PASS  part blocked without enough credits
+PASS  everything persists across a reload  ({"paint":"blue","upgrades":{"engine":3,"tyres":0,"brakes":0,"suspension":1},"parts":["wheels:mesh"],"look":{"wheels":"mesh","spoiler":"none","kit":"stock"}})
+PASS  older save without a suspension level loads with suspension 0
+PASS  suspension level clamped to 3
+PASS  bought parts de-duplicated; unknown parts and factory parts dropped from the list  (wheels:dish)
+PASS  fitted parts must be owned: unbought GT wing and unknown kit fall back to the factory fit  ({"wheels":"dish","spoiler":"wing","kit":"stock"})
+PASS  garbage parts / look fields give the factory fit
+PASS  missing car entry gets a complete default garage record
+PASS  exactly one free default vehicle (the Kestrel GT)
+PASS  garage lists all 8 cars once
+PASS  star-gated cars are blocked with 0 stars even when rich
+PASS  every car can be unlocked with campaign stars alone  (max campaign stars 45, highest requirement 30)
+PASS  all 8 cars can be bought once unlocked
+PASS  first clear pays in full (+ star bonus), replays pay less, new stars add a bonus  (1230 / 530 / 230)
+PASS  credits accumulate and are saved
+PASS  readStoredProgress returns what another tab saved  (10000)
+PASS  adoptProgress updates the stale copy in place (shared reference kept)
+PASS  adoptProgress is a no-op when nothing changed
+PASS  a corrupted stored save is never adopted
+PASS  a wrong-version stored save is never adopted
+PASS  a missing stored save is never adopted
+
+ALL PROGRESS CHECKS PASSED

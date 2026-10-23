@@ -1,0 +1,68 @@
+--- structure and progression
+PASS  15 missions  (15)
+PASS  ids unique and save-safe
+PASS  15 distinct mission kinds  (tutorial,school,checkpoints,parking,obstacles,timetrial,traffic,speed,race,delivery,drift,escape,advanced,circuit,gp)
+PASS  every kind has a label, titles unique
+PASS  numbers follow the campaign order
+PASS  chapters cover the campaign in order
+PASS  a reward per mission, generally rising
+PASS  every mission has objectives, tips and a finish condition
+PASS  every mission can fail (time limit or race)
+PASS  timed missions: star times inside the limit
+PASS  star gates are reachable
+PASS  mission start markers are at least 20 m apart  (22.8 m)
+PASS  new save: only mission 1 is open
+PASS  clearing a mission opens the next and pays
+PASS  star gate: Circuit Championship needs 24 mission stars  (Needs 24 mission stars (you have 14))
+PASS  enough stars open it
+PASS  drift best keeps the highest score
+PASS  old 5-mission save: everything it had unlocked stays unlocked  (unlocked 9)
+PASS  old save with 2 unlocked opens City Driving (and the new mission before it)
+PASS  new layout saves round-trip unchanged
+PASS  corrupt mission entries are dropped / clamped
+
+--- rules (synthetic inputs)
+PASS  cargo: knocks reduce integrity, 0 % fails the delivery  (58→16→0)
+PASS  parking: 6 bumps above 1.2 m/s end the test
+PASS  rush hour: a red light adds 4 s without a strike
+PASS  rush hour: hitting a pedestrian costs a double penalty
+
+--- every mission: completed by the test driver
+PASS  1. Find Your Ride (Find the car) completed in a Kestrel GT L0  (33.5 s, 3★)
+PASS  2. Driving School (Driving school) completed in a Kestrel GT L0  (62.3 s, 3★)
+PASS  3. City Driving (Checkpoint run) completed in a Kestrel GT L0  (27.7 s, 3★)
+PASS  4. Precision Parking (Parking) completed in a Kestrel GT L0  (68.7 s, 3★)
+PASS  5. Obstacle Course (Obstacles) completed in a Kestrel GT L0  (41.4 s, 3★)
+PASS  6. Time Trial (Time trial) completed in a Kestrel GT L0  (73.2 s, 3★)
+PASS  7. Rush Hour (Traffic) completed in a Kestrel GT L0  (75.7 s, 2★, Red lights run 1)
+PASS  8. Speed Trap (Speed) completed in a Kestrel GT L0  (17.3 s, 3★, Section 1 109 km/h ✓, Section 2 125 km/h ✓)
+PASS  9. Street Race (Race) completed in a Kestrel GT L1  (70.1 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (0 rival respawns)
+PASS  10. Fragile Cargo (Delivery) completed in a Kestrel GT L1  (43.1 s, 3★, Cargo condition 100%)
+PASS  11. Drift King (Drift) completed in a Kestrel GT L1  (21.5 s, 2★, score 991, Drift score 991)
+PASS  12. Hot Pursuit (Police escape) completed in a Kestrel GT L2  (89.2 s, 2★)
+PASS  13. The Gauntlet (Obstacles+) completed in a Kestrel GT L2  (58.1 s, 3★)
+PASS  14. Circuit Championship (Circuit race) completed in a Brute V8 L2  (207.8 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (0 rival respawns)
+      Grand Prix wins: 2/3 (vortex L2: lost, vortex L3: P1 145.1 s, apex L0: P1 136.8 s)
+PASS  15. City Grand Prix (Grand Prix) completed in a Vortex RS L3  (145.1 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (1 rival respawns)
+
+--- every mission: can fail
+PASS  1. Find Your Ride fails  (failed: Time’s up after 180.0 s)
+PASS  2. Driving School fails  (failed: Time’s up after 240.0 s)
+PASS  3. City Driving fails  (failed: Time’s up after 60.0 s)
+PASS  4. Precision Parking fails  (failed: Time’s up after 180.0 s)
+PASS  5. Obstacle Course fails  (failed: Time’s up after 150.0 s)
+PASS  6. Time Trial fails  (failed: Time’s up after 125.0 s)
+PASS  7. Rush Hour fails  (failed: Time’s up after 110.0 s)
+PASS  8. Speed Trap fails  (failed: Too slow through the speed sections after 27.2 s)
+PASS  9. Street Race fails  (failed: A rival took the win — only a win counts after 76.7 s)
+PASS  10. Fragile Cargo fails  (failed: Time’s up after 85.0 s)
+PASS  11. Drift King fails  (failed: Not enough drift points — 0 of 600 after 17.1 s)
+PASS  12. Hot Pursuit fails  (failed: Busted — the police caught you after 8.3 s)
+PASS  13. The Gauntlet fails  (failed: Time’s up after 170.0 s)
+PASS  14. Circuit Championship fails  (failed: 3 rivals finished ahead — top 3 needed after 220.2 s)
+PASS  15. City Grand Prix fails  (failed: A rival took the win — only a win counts after 147.9 s)
+
+CAMPAIGN TEST: ALL PASSED

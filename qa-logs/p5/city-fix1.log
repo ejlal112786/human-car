@@ -1,0 +1,68 @@
+PASS  free roam: mission starts, career events and the garage are marked in the city  (23 places)
+PASS  no marker is inside a building  (none)
+PASS  no prompt at the free-roam spawn point  (null)
+PASS  N opens the city map and pauses the game  (map paused canvas 568,346)
+PASS  map lists every destination with a tappable pin; locked missions say why  (23 pins, 23 entries, "Locked — complete the previous mission to unlock")
+PASS  choosing a destination closes the map, resumes play and plots a route  (state onFoot, dest garage, 151 route points)
+PASS  route starts at the player and ends at the garage
+PASS  HUD shows the destination and road distance  (▲Garage900 m)
+PASS  tapping the minimap opens the map
+PASS  Clear route removes the route and the HUD hint
+PASS  HUD map button + map pin also set the destination
+PASS  arriving clears the route  (dest null)
+PASS  stopped at the garage: prompt to open it  (Open garage)
+PASS  E opens the garage right there (game paused)
+PASS  city garage previews cars on the street (selection unchanged) with the orbit camera
+PASS  Done returns to driving with the selected car (handling and stance restored)  (driving coupe kestrel)
+PASS  driving away from the route shows "Turn around"; driving along it does not  (one way false, other way true)
+PASS  standing at an unlocked mission start offers to start it  (Start Mission 2: Driving School)
+PASS  E opens that mission's briefing
+PASS  a locked mission start says so and does nothing  (Mission 3 is locked)
+PASS  during a mission: no city markers, the map shows the objective without destinations
+PASS  Esc closes the map and resumes
+PASS  phone landscape: map button visible on the touch HUD  ({"x":106,"y":10,"width":40,"height":40})
+PASS  phone landscape: map fits the screen with a usable map area  ({"top":16,"bottom":374,"right":828,"canvasH":240,"docW":844})
+PASS  phone landscape: tapping a destination sets the route
+PASS  free roam: one patrol car out on the road, out of sight, light bar fitted  (1 active, nearest 253 m)
+PASS  wanted meter hidden while clear
+PASS  the patrol car drives its lane  (46 m in 4 s)
+PASS  an offence nobody sees is not reported
+PASS  running a red light in front of a police car: 1 star, pursuit  (crossing 70 lane 1.75: 1★ pursuit, heat 1)
+PASS  wanted meter shows the stars and the state  ({"hidden":false,"stars":"★☆☆","state":"Pursuit"})
+PASS  2 stars bring a second unit  (2★, 2 units)
+PASS  stopping next to the police gets you busted  (state busted, nearest 6.2 m)
+PASS  busted: fined 250 cr per star, saved  (2000 → 1500 cr, "Busted! Fined 500 cr")
+PASS  wanted meter shows Busted
+PASS  after the arrest the record is clean again
+PASS  out of sight → search; 10 s unseen → escaped  (pursuit true, search true (Searching), final clear, "You lost the police")
+PASS  reinforcements leave once the chase is over (patrol car stays)
+PASS  missions have no police; race rivals use the pooled cars without light bars  ([[false,true,false],[false,true,false],[false,true,false]])
+PASS  back in free roam the patrol returns
+PASS  Career screen: 7 events in 3 tiers, only the first open, locked ones say why  (7 cards, 1 open, "Clear Harbor Sprint first")
+PASS  Career screen shows credits, rewards and star total; no debug text
+PASS  event briefing: career tier, reward, limit, star times; the city previews the event layout  (briefing, id harbor-sprint)
+PASS  briefing Back returns to the Career screen
+PASS  Escape = Back: briefing → Career → title (state back to menu)  (career → title)
+PASS  Start event: on foot at the event, career run active, police off  (onFoot harbor-sprint)
+PASS  driving through every checkpoint completes the event  (6/6 gates (6), complete)
+PASS  result: stars, credits paid and saved, next event unlocked  (stars 3, credits 2800)
+PASS  Next event opens the Rookie Cup briefing with rivals and their cars  (Dash (Kestrel GT), Rook (Kestrel GT))
+PASS  career progress and credits survive a reload  (credits 2800)
+PASS  rivals drive their catalogue cars
+PASS  both rivals finishing first fails the Rookie Cup at once: "top 2 needed"  (failed "2 rivals finished ahead — top 2 needed")
+PASS  Pro Duel open (replay); its rival races a Brute; Grand Loop asks for 8 stars  ({"car":"brute","style":"muscle"} "Needs 8 career stars (you have 7)")
+PASS  pause → Quit from a career event: back on the title, career run cleared  (title, id null)
+PASS  free roam: the pooled cars are stock patrol cars again  ([{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"}])
+PASS  career markers in the city: locked one explains, open one starts the briefing with E  ("Elite Night Run: Locked — Clear Grand Loop first" / "Enter Harbor Sprint (Career · Rookie sprint)" → briefing)
+PASS  phone: Career list fits the screen width and scrolls vertically  ({"w":358,"sw":356,"cw":356,"sh":1181,"ch":810,"vw":390})
+PASS  phone: touch "Start" at a career marker opens the briefing; tapping Start event begins it  (label Start, screen briefing, state onFoot, career harbor-sprint)
+PASS  two tabs: both start from the same save  (A {"credits":10000,"owned":"kestrel","car":"kestrel","engine":0} B {"credits":10000,"owned":"kestrel","car":"kestrel","engine":0})
+PASS  two tabs: the other tab adopts a purchase at once (credits, car, garage view)  (tab B {"credits":7000,"owned":"kestrel,pip","car":"pip","engine":0}; buy button false; owned view true)
+PASS  two tabs: a later change in the other tab keeps the purchase (no lost update, no refund)  (stored {"credits":5500,"owned":"kestrel,pip","car":"pip","engine":1}; tab A {"credits":5500,"owned":"kestrel,pip","car":"pip","engine":1})
+PASS  two tabs: both tabs agree on the save  (tab B 5500 vs stored 5500)
+PASS  two tabs: settings changed in one tab follow in the other (volume shown there too)  (tab B volume 0.3, slider label 30%)
+PASS  two tabs: a later setting in the other tab keeps the first change  (stored {"volume":0.3,"muted":true}; tab A {"volume":0.3,"muted":true})
+PASS  no console errors or warnings  (none)
+
+65 passed, 0 failed
+CITY QA PASSED

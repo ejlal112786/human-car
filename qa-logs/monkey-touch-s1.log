@@ -1,0 +1,71 @@
+  0 click credits:Credits                            → menu/credits
+  1 click back:Back                                  → menu/title
+  2 tap 384,190                                      → menu/career
+  3 click cbrief:1
+            
+                     → briefing/briefing
+  4 click career:Back                                → menu/career
+  5 click cbrief:1
+            
+                     → briefing/briefing
+  6 click cstart:Start event                         → onFoot
+  7 hold stick 197°+jump 1.4s                        → onFoot
+  8 hold stick 55°+swipe 0.6s                        → onFoot
+  9 hold stick 86° 1.1s                              → onFoot
+ 10 hold stick 332° 2.6s                             → onFoot
+ 11 tap 248,343                                      → onFoot
+ 12 hold stick 337°+jump 2.7s                        → onFoot
+ 13 qa: to the car door + E                          → driving 0 km/h
+ 14 click map:N                                      → paused/map
+ 15 click back:Back to the game                      → driving 0 km/h
+ 16 hold gas+left+swipe 2s                           → driving 44 km/h
+ 17 tap map:N                                        → paused/map
+ 18 tap 3,71                                         → paused/map
+ 19 tap 278,280                                      → paused/map
+ 20 click back:Back to the game                      → driving 43 km/h
+ 21 hold brake+handbrake 2.5s                        → driving 0 km/h
+ 22 hold gas+right+handbrake+swipe 2.5s              → driving 0 km/h
+ 23 tap pause:ESC                                    → paused/pause
+ 24 click restart:Restart                            → onFoot
+ 25 hold stick 234° 0.3s                             → onFoot
+ 26 hold stick 204°+jump+swipe 1s                    → onFoot
+ 27 click map:N                                      → paused/map
+ 28 click back:Back to the game                      → onFoot
+ 29 hold stick 352°+swipe 1.3s                       → onFoot
+ 30 hold stick 223°+jump+swipe 1.9s                  → onFoot
+ 31 hold stick 232°+swipe 2.4s                       → onFoot
+ 32 click mute:M                                     → onFoot
+ 33 click map:N                                      → paused/map
+ 34 click back:Back to the game                      → onFoot
+ 35 qa: to the car door + E                          → driving 0 km/h
+ 36 hold gas+brake+left 1.9s                         → driving 8 km/h
+ 37 click pause:ESC                                  → paused/pause
+ 38 tap 230,5                                        → paused/pause
+ 39 click settings:Settings                          → paused/settings
+ 40 click back:Done                                  → paused/pause
+ 41 tap 151,252                                      → paused/pause
+ 42 click restart:Restart                            → onFoot
+ 43 hold stick 205° 2.2s                             → onFoot
+ 44 qa: to the car door + E                          → driving 0 km/h
+ 45 tap 324,371                                      → driving 0 km/h
+ 46 hold gas+handbrake 0.9s                          → driving 0 km/h
+ 47 tap :                                            → driving 0 km/h
+ 48 tap map:N                                        → paused/map
+ 49 click back:Back to the game                      → driving 0 km/h
+ 50 hold right 2.8s                                  → driving 0 km/h
+ 51 tap reset:R                                      → driving 0 km/h
+ 52 hold gas+left+right 2.3s                         → driving 57 km/h
+ 53 hold gas+left 0.9s                               → driving 77 km/h
+ 54 tap reset:R                                      → driving 0 km/h
+ 55 hold gas+right+handbrake 1.2s                    → driving 0 km/h
+ 56 hold left 1.5s                                   → driving 0 km/h
+ 57 hold gas+brake 1.9s                              → driving 11 km/h
+ 58 hold gas+swipe 2.5s                              → driving 61 km/h
+ 59 hold gas+handbrake 1.2s                          → driving 0 km/h
+
+seed 1, 60 steps, touch 844×390
+states: {"menu":4,"briefing":2,"onFoot":18,"driving":23,"paused":13}
+screens: {"credits":1,"title":1,"career":2,"briefing":2,"map":7,"pause":5,"settings":1}
+actions: {"hold":24,"tap":13,"click back":7,"qa:":3,"click map":3,"click cbrief":2,"click restart":2,"click credits":1,"click career":1,"click cstart":1,"click mute":1,"click pause":1,"click settings":1}
+
+MONKEY QA PASSED

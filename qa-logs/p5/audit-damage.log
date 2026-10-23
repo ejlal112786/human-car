@@ -1,0 +1,16 @@
+PASS  8 km/h into a wall: no damage (below the threshold)  (dv 0.0 m/s — F 0.00 R 0.00 L 0.00 Rt 0.00 lamps -)
+PASS  28 km/h into a wall: front dented, nothing else  (dv 8.5 — F 0.31 R 0.00 L 0.00 Rt 0.00 lamps headL)
+PASS  55 km/h into a wall: heavy front damage and broken headlights  (dv 16.5 — F 0.77 R 0.00 L 0.00 Rt 0.00 lamps headL+headR)
+PASS  90 km/h into a wall: nose crushed, engine smokes and loses power  (dv 26.8 — F 1.00 R 0.00 L 0.00 Rt 0.00 lamps headL+headR, power ×0.75, smoke 1.00)
+PASS  damage grows with impact speed  (0.00 < 0.24 < 0.60 < 0.78)
+PASS  reversing into a wall damages the rear, not the front  (dv 6.5 — F 0.00 R 0.20 L 0.00 Rt 0.00 lamps -)
+PASS  side impact damages the struck side only  (dv 7.0 — F 0.00 R 0.00 L 0.00 Rt 0.23 lamps -)
+PASS  20 gentle nudges (≤ 7 km/h) cause no damage at all  (max dv 2.1 m/s (threshold 3))
+PASS  dropping 1.5 m onto the wheels causes no damage  (F 0.00 R 0.00 L 0.00 Rt 0.00 lamps -)
+PASS  a wrecked engine is measurably slower (0-60 km/h)  (2.43 s → 3.30 s)
+PASS  repair price scales with the damage  (400 cr / 1150 cr)
+PASS  repair restores the car completely
+PASS  garbage input (NaN / negative) is ignored
+PASS  zones never exceed 100 %  (F 1.00 R 0.00 L 0.00 Rt 1.00 lamps headR)
+
+ALL DAMAGE CHECKS PASSED

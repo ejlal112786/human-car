@@ -1,0 +1,19 @@
+PASS  starter car (Kestrel GT) uses exactly the original chassis and engine parameters  (deep-equal)
+  Kestrel GT  0-100 4.40 s | 30 s 230 km/h | 100-0 35.6 m | skidpad 1.14 g | slide 0.26 m/s | stats 345 kW 1350 kg ~296 km/h
+  Pip Hatch   0-100 5.65 s | 30 s 180 km/h | 100-0 32.6 m | skidpad 1.16 g | slide 0.20 m/s | stats 193 kW 1080 kg ~228 km/h
+  Brute V8    0-100 4.20 s | 30 s 233 km/h | 100-0 43.7 m | skidpad 1.06 g | slide 0.39 m/s | stats 383 kW 1620 kg ~297 km/h
+  Vortex RS   0-100 2.95 s | 30 s 289 km/h | 100-0 25.3 m | skidpad 1.38 g | slide 0.45 m/s | stats 534 kW 1290 kg ~312 km/h
+PASS  acceleration differs: Vortex quickest, Pip slowest, Brute beats the Kestrel  (0-100: V 2.95 B 4.20 K 4.40 P 5.65 s)
+PASS  0-100 spread is large (slowest at least 1.6x the quickest)  (1.92x)
+PASS  speed: Vortex fastest, Pip slowest after 30 s flat out  (V 289 B 233 K 230 P 180 km/h)
+PASS  braking: Vortex stops shortest, heavy Brute longest  (V 25.3 K 35.6 P 32.6 B 43.7 m)
+PASS  cornering grip: Vortex highest, Brute lowest  (V 1.38 K 1.14 P 1.16 B 1.06 g)
+PASS  balance: the Brute slides its tail far more under power than the planted Pip  (slide B 0.39 K 0.26 P 0.20 V 0.45 m/s)
+PASS  every car stays upright through the handling tests  (kestrel 1.00, pip 1.00, brute 1.00, vortex 1.00)
+PASS  garage top-speed figures rank like the measured speeds  (vortex>brute>kestrel>pip vs vortex>brute>kestrel>pip)
+PASS  garage acceleration figures rank like the measured 0-100 times  (vortex>brute>kestrel>pip vs vortex>brute>kestrel>pip)
+PASS  engine upgrade (level 3) improves acceleration  (4.40 → 3.73 s)
+PASS  tyre upgrade (level 3) improves cornering grip  (1.139 → 1.293 g)
+PASS  brake upgrade (level 3) shortens braking  (35.6 → 26.7 m)
+
+ALL VEHICLE CHECKS PASSED

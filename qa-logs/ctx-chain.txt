@@ -1,0 +1,4 @@
+release EXIT 0
+resources EXIT 0
+city EXIT 0
+CHAIN DONE

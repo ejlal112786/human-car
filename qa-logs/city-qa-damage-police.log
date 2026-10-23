@@ -1,0 +1,28 @@
+PASS  damage: the car starts undamaged
+PASS  a small knock (below ~11 km/h of impact) leaves no damage
+PASS  driving into a building dents the front of the car  (sample 127: front 0.53, level 41%)
+PASS  a hard rear-right hit damages the rear and right side and breaks the right tail lamp  ({"front":0.52668335654469,"rear":0.43124999999999986,"left":0.011501765248896186,"right":0.43124999999999986} {"headL":true,"headR":true,"tailL":false,"tailR":true})
+PASS  HUD shows the damage level  (DAMAGE 47%)
+PASS  a crushed nose costs engine power  (power ×0.75)
+PASS  garage offers a repair priced by the damage  (Your car is damaged · 84% Body work, lamps and engine restored REPAIR · 2,050 CR)
+PASS  repair charges credits and restores the car (body, lamps, power)  (5000 → 2950 cr)
+PASS  starting a mission gives a fresh, undamaged car  (before 53%)
+PASS  free roam: one patrol car out on the road, out of sight, light bar fitted  (1 active, nearest 253 m)
+PASS  wanted meter hidden while clear
+PASS  the patrol car drives its lane  (46 m in 4 s)
+PASS  an offence nobody sees is not reported
+PASS  running a red light in front of a police car: 1 star, pursuit  (crossing 70 lane 1.75: 1★ pursuit, heat 1)
+PASS  wanted meter shows the stars and the state  ({"hidden":false,"stars":"★☆☆","state":"Pursuit"})
+PASS  2 stars bring a second unit  (2★, 2 units)
+PASS  stopping next to the police gets you busted  (state busted, nearest 6.2 m)
+PASS  busted: fined 250 cr per star, saved  (2000 → 1500 cr, "Busted! Fined 500 cr")
+PASS  wanted meter shows Busted
+PASS  after the arrest the record is clean again
+PASS  out of sight → search; 10 s unseen → escaped  (pursuit true, search true (Searching), final clear, "You lost the police")
+PASS  reinforcements leave once the chase is over (patrol car stays)
+PASS  missions have no police; race rivals use the pooled cars without light bars  ([[false,true,false],[false,true,false],[false,true,false]])
+PASS  back in free roam the patrol returns
+PASS  no console errors or warnings  (none)
+
+25 passed, 0 failed
+CITY QA PASSED

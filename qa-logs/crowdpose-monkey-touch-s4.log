@@ -1,0 +1,157 @@
+  0 click play:Play                                  → briefing/briefing
+  1 click levels:Back                                → menu/levels
+  2 click level:1 Find Your Ride Find yo             → briefing/briefing
+  3 tap 446,289                                      → briefing/briefing
+  4 click levels:Back                                → menu/levels
+  5 click back:Back                                  → menu/title
+  6 click career:Career                              → menu/career
+  7 click back:Back                                  → menu/title
+  8 click career:Career                              → menu/career
+  9 click back:Back                                  → menu/title
+ 10 click credits:Credits                            → menu/credits
+ 11 tap 295,72                                       → menu/credits
+ 12 click back:Back                                  → menu/title
+ 13 click credits:Credits                            → menu/credits
+ 14 click back:Back                                  → menu/title
+ 15 click garage:Garage                              → menu/garage
+ 16 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 17 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 18 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 19 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 20 tap 324,381                                      → menu/garage
+ 21 click gview:Kestrel GTSports coupeDr             → menu/garage
+ 22 click gview:Kestrel GTSports coupeDr             → menu/garage
+ 23 tap 575,136                                      → menu/garage
+ 24 click gview:Pip HatchCity hatchback3             → menu/garage
+ 25 click back:Done                                  → menu/title
+ 26 click garage:Garage                              → menu/garage
+ 27 click gview:Vortex RSSupercar12 ★ ne             → menu/garage
+ 28 tap 773,12                                       → menu/garage
+ 29 click gview:Brute V8Muscle car6 ★ ne             → menu/garage
+ 30 click back:Done                                  → menu/title
+ 31 click settings:Settings                          → menu/settings
+ 32 click back:Done                                  → menu/title
+ 33 click play:Play                                  → briefing/briefing
+ 34 click levels:Back                                → menu/levels
+ 35 tap 362,346                                      → menu/title
+ 36 click career:Career                              → menu/career
+ 37 click cbrief:1 Harbor Sprint Sprint A            → briefing/briefing
+ 38 click career:Back                                → menu/career
+ 39 click back:Back                                  → menu/title
+ 40 click garage:Garage                              → menu/garage
+ 41 click back:Done                                  → menu/title
+ 42 click settings:Settings                          → menu/settings
+ 43 click :On                                        → menu/settings
+ 44 click back:Done                                  → menu/title
+ 45 click levels:Missions                            → menu/levels
+ 46 click level:1 Find Your Ride Find yo             → briefing/briefing
+ 47 tap 495,15                                       → briefing/briefing
+ 48 tap 568,346                                      → briefing/briefing
+ 49 tap 525,385                                      → briefing/briefing
+ 50 click start:Start mission                        → onFoot
+ 51 hold stick 356° 2.5s                             → onFoot
+ 52 hold stick 280°+swipe 1.2s                       → onFoot
+ 53 hold stick 145° 1.6s                             → onFoot
+ 54 hold stick 250° 0.4s                             → onFoot
+ 55 hold stick 113°+swipe 2.3s                       → onFoot
+ 56 hold stick 354°+jump 2.7s                        → onFoot
+ 57 hold stick 98° 2.1s                              → onFoot
+ 58 click map:N                                      → paused/map
+ 59 tap 503,201                                      → paused/map
+ 60 tap 580,379                                      → paused/map
+ 61 click back:Back to the game                      → onFoot
+ 62 click mute:M                                     → onFoot
+ 63 qa: to the car door + E                          → driving 0 km/h
+ 64 hold gas+right 2.8s                              → driving 0 km/h
+ 65 hold nothing 2.2s                                → driving 0 km/h
+ 66 hold gas+brake+left 0.9s                         → driving 0 km/h
+ 67 hold brake+right+handbrake+swipe 0.4s            → driving 0 km/h
+ 68 hold gas+handbrake 2.2s                          → driving 0 km/h
+ 69 click :                                          → driving 0 km/h
+ 70 hold left+right+swipe 0.9s                       → driving 0 km/h
+ 71 hold brake 0.8s                                  → driving 9 km/h
+ 72 hold gas+brake+swipe 0.9s                        → driving 5 km/h
+ 73 hold gas+left+right 2.5s                         → driving 0 km/h
+ 74 click reset:R                                    → driving 0 km/h
+ 75 hold swipe 1.3s                                  → driving 0 km/h
+ 76 hold gas+left+swipe 2.7s                         → driving 0 km/h
+ 77 tap :Gas                                         → driving 0 km/h
+ 78 tap map:N                                        → paused/map
+ 79 click back:Back to the game                      → driving 0 km/h
+ 80 hold gas+right+handbrake 0.8s                    → driving 0 km/h
+ 81 hold left 2.7s                                   → driving 0 km/h
+ 82 hold brake+handbrake 0.7s                        → driving 0 km/h
+ 83 hold gas+left+handbrake 1.8s                     → driving 0 km/h
+ 84 hold gas 0.7s                                    → driving 0 km/h
+ 85 tap :Handbrake                                   → driving 0 km/h
+ 86 click map:N                                      → paused/map
+ 87 click back:Back to the game                      → driving 0 km/h
+ 88 click map:N                                      → paused/map
+ 89 click back:Back to the game                      → driving 0 km/h
+ 90 hold gas+handbrake 2.5s                          → driving 0 km/h
+ 91 hold left+right+handbrake 1.8s                   → driving 0 km/h
+ 92 hold gas+right 2.1s                              → driving 0 km/h
+ 93 hold right 2.4s                                  → driving 0 km/h
+ 94 tap :Exit                                        → exiting
+ 95 click map:N                                      → onFoot
+ 96 hold stick 183° 1.7s                             → onFoot
+ 97 click :Run                                       → onFoot
+ 98 click mute:M                                     → onFoot
+ 99 hold stick 336° 1.8s                             → onFoot
+100 qa: to the car door + E (no interact button)     → onFoot
+101 hold stick 318°+swipe 0.4s                       → onFoot
+102 hold stick 222°+swipe 1s                         → onFoot
+103 hold stick 211° 2.1s                             → onFoot
+104 hold stick 337°+jump 1.3s                        → onFoot
+105 hold stick 52° 0.6s                              → onFoot
+106 click mute:M                                     → onFoot
+107 hold stick 291° 1.8s                             → onFoot
+108 hold stick 197°+swipe 1.7s                       → onFoot
+109 hold stick 58°+jump 2s                           → onFoot
+110 hold stick 97° 2s                                → onFoot
+111 hold stick 122°+swipe 0.3s                       → onFoot
+112 qa: to the car door + E (no interact button)     → onFoot
+113 hold stick 204°+swipe 2.6s                       → onFoot
+114 click map:N                                      → paused/map
+115 click back:Back to the game                      → onFoot
+116 hold stick 337° 2s                               → onFoot
+117 qa: to the car door + E (no interact button)     → onFoot
+118 click map:N                                      → paused/map
+119 click back:Back to the game                      → onFoot
+120 hold stick 15° 0.4s                              → onFoot
+121 hold stick 146° 1s                               → onFoot
+122 hold stick 42°+jump 0.9s                         → onFoot
+123 hold stick 102° 2.3s                             → onFoot
+124 qa: to the car door + E (no interact button)     → onFoot
+125 hold stick 82° 1s                                → onFoot
+126 hold stick 224°+jump+swipe 1.6s                  → onFoot
+127 qa: to the car door + E (no interact button)     → onFoot
+128 hold stick 247°+swipe 2s                         → onFoot
+129 qa: to the car door + E (no interact button)     → onFoot
+130 qa: to the car door + E (no interact button)     → onFoot
+131 hold stick 359°+swipe 1.9s                       → onFoot
+132 hold stick 179° 0.7s                             → onFoot
+133 hold stick 153° 2s                               → onFoot
+134 qa: to the car door + E (no interact button)     → onFoot
+135 click pause:ESC                                  → paused/pause
+136 click settings:Settings                          → paused/settings
+137 click back:Done                                  → paused/pause
+138 click settings:Settings                          → paused/settings
+139 click back:Done                                  → paused/pause
+140 click restart:Restart                            → onFoot
+141 hold stick 244° 1.8s                             → onFoot
+142 hold stick 331°+swipe 2.2s                       → onFoot
+143 click pause:ESC                                  → paused/pause
+144 click settings:Settings                          → paused/settings
+145 click :Medium                                    → paused/settings
+146 click :Off                                       → paused/settings
+147 click back:Done                                  → paused/pause
+148 click quit:Quit to menu                          → menu/title
+149 click credits:Credits                            → menu/credits
+
+seed 4, 150 steps, touch 844×390
+states: {"briefing":9,"menu":43,"onFoot":51,"paused":18,"driving":28,"exiting":1}
+screens: {"briefing":9,"levels":4,"title":13,"career":4,"credits":4,"garage":15,"settings":8,"map":8,"pause":5}
+actions: {"hold":53,"click back":20,"tap":15,"click gview":9,"qa:":9,"click map":6,"click settings":5,"click ":5,"click levels":4,"click career":4,"click credits":3,"click garage":3,"click mute":3,"click play":2,"click level":2,"click pause":2,"click cbrief":1,"click start":1,"click reset":1,"click restart":1,"click quit":1}
+
+MONKEY QA PASSED

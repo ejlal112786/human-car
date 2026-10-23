@@ -1,0 +1,42 @@
+(min  10) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 37.2 km/h  crossings 9  red stops 122  laps 2  heap 24.7 MB  wall 5 s
+(min  20) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 34.6 km/h  crossings 14  red stops 233  laps 4  heap 24.8 MB  wall 8 s
+(min  30) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 35.4 km/h  crossings 33  red stops 379  laps 6  heap 24.8 MB  wall 11 s
+(min  40) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 32.3 km/h  crossings 52  red stops 536  laps 9  heap 24.8 MB  wall 14 s
+(min  50) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 41.7 km/h  crossings 64  red stops 653  laps 11  heap 24.8 MB  wall 17 s
+(min  60) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.2 km/h  crossings 73  red stops 757  laps 13  heap 24.8 MB  wall 21 s
+(min  70) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 32.7 km/h  crossings 87  red stops 881  laps 15  heap 24.8 MB  wall 25 s
+(min  80) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 31.7 km/h  crossings 100  red stops 1029  laps 18  heap 24.8 MB  wall 28 s
+(min  90) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 41.3 km/h  crossings 103  red stops 1126  laps 20  heap 24.8 MB  wall 31 s
+(min 100) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.6 km/h  crossings 109  red stops 1219  laps 22  heap 24.8 MB  wall 36 s
+(min 110) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 32.4 km/h  crossings 122  red stops 1355  laps 24  heap 24.8 MB  wall 38 s
+(min 120) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.2 km/h  crossings 142  red stops 1506  laps 27  heap 24.8 MB  wall 41 s
+(min 130) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 42.0 km/h  crossings 145  red stops 1625  laps 29  heap 24.8 MB  wall 44 s
+(min 140) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 31.6 km/h  crossings 152  red stops 1748  laps 31  heap 24.8 MB  wall 47 s
+(min 150) idle  cars 17  peds 24  bodies 73  colliders 97  mean car speed 38.2 km/h  crossings 172  red stops 1924  laps 33  heap 24.8 MB  wall 51 s
+(min 160) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 37.2 km/h  crossings 183  red stops 2069  laps 36  heap 24.8 MB  wall 54 s
+(min 170) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.9 km/h  crossings 184  red stops 2155  laps 38  heap 24.8 MB  wall 57 s
+(min 180) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 29.9 km/h  crossings 197  red stops 2274  laps 40  heap 24.8 MB  wall 60 s
+(min 190) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 32.0 km/h  crossings 215  red stops 2427  laps 42  heap 24.9 MB  wall 63 s
+(min 200) idle  cars 17  peds 24  bodies 73  colliders 97  mean car speed 38.1 km/h  crossings 227  red stops 2545  laps 45  heap 24.9 MB  wall 66 s
+(min 210) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 35.4 km/h  crossings 230  red stops 2640  laps 47  heap 24.9 MB  wall 70 s
+(min 220) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 33.7 km/h  crossings 245  red stops 2777  laps 49  heap 24.9 MB  wall 73 s
+(min 230) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 32.6 km/h  crossings 261  red stops 2924  laps 52  heap 24.9 MB  wall 76 s
+(min 240) idle  cars 18  peds 24  bodies 73  colliders 97  mean car speed 38.7 km/h  crossings 275  red stops 3040  laps 54  heap 24.9 MB  wall 78 s
+
+240 simulated minutes, 54 player laps of the loop, 78 s wall time
+PASS  no NaN / infinite positions or speeds (cars, pedestrians)  (none)
+PASS  no two traffic cars ever overlap  (0 samples)
+PASS  traffic stays on the carriageway  (0 samples)
+PASS  no red-light violations; pedestrians follow the crossing rules  (violations 0, bad starts 0, off-crossing 0, on road at green 0)
+PASS  no gridlock: no car stands still for more than 60 s  (longest stop 17.5 s)
+PASS  no pedestrian stuck for over 45 s  (longest stand 11.5 s)
+PASS  pedestrians never brush into lamps, trees, poles or props  (min clearance 0.115 m)
+PASS  population maintained around the player in every phase  (min 15 cars, 23 pedestrians (30 s into a phase))
+PASS  traffic flow does not degrade over the session  (first 10 min 36.8 km/h, last 10 min 37.3 km/h)
+PASS  pedestrians keep crossing throughout  (142 in the first half, 133 in the second)
+PASS  object pools do not grow (cars, pedestrians)  (cars 18 -> 18, peds 24 -> 24)
+PASS  no physics body / collider leak  (bodies 73 -> 73 (max 73), colliders 97 -> 97 (max 97))
+PASS  heap stable after warm-up (10 min -> end, after GC)  (25.0 MB -> 24.8 MB (-0.17 MB))
+(info) red stops 3040, lane changes 4744, crossings 275/275, dodges 0, min car gap 2.29 m, min ped clearance 0.12 m
+
+SOAK TEST PASSED

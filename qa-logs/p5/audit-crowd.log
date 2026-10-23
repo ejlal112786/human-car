@@ -1,0 +1,13 @@
+character: 4734 vertices, 41 bones, 1.77 m tall; 379 baked rows at 30 fps
+PASS  unblended solve reproduces the baked poses  (worst 0.0003 mm at Jump frame 14)
+PASS  Walk ↔ Run: exact blend matches the animation mixer on every vertex  (worst 0.0 mm = 0.00% of height)
+PASS  Walk ↔ Run: exact blend fixes the folding of the linear mix  (linear mix worst 239 mm = 13.47% of height)
+PASS  Idle ↔ Walk: exact blend matches the animation mixer on every vertex  (worst 0.0 mm = 0.00% of height)
+PASS  Idle ↔ Walk: exact blend fixes the folding of the linear mix  (linear mix worst 209 mm = 11.80% of height)
+PASS  Idle ↔ Run: exact blend matches the animation mixer on every vertex  (worst 0.0 mm = 0.00% of height)
+PASS  Idle ↔ Run: exact blend fixes the folding of the linear mix  (linear mix worst 416 mm = 23.45% of height)
+PASS  a full frame of exact blends (24 people) costs < 2 ms of CPU  (0.179 ms per frame, 7.4 µs per person)
+PASS  out-of-range pose rows are rejected
+
+9 passed, 0 failed
+ALL CROWD POSE CHECKS PASSED

@@ -1,0 +1,11 @@
+PASS  Settings has a Racing section  (Audio, Graphics, Display, Controls, Racing, On foot, Driving, Anytime, Touch)
+PASS     defaults: Rival skill Normal, Catch-up rivals Off
+PASS     choosing Hard / On updates the controls and the saved settings  ({"aiDifficulty":"hard","rubberBand":true,"quality":"low"})
+PASS     after a reload the choices are still selected
+PASS     and can be set back (Normal / Off)
+PASS  free roam on Low graphics keeps the Low traffic density (≤ 9 cars)  (9 cars)
+PASS  Rush Hour on Low graphics uses its fixed mission density (18 cars, not 9)  (18 cars)
+PASS     back in free roam the quality density applies again  (9 cars)
+PASS  no console errors
+
+RACE OPTIONS QA: ALL 9 PASSED

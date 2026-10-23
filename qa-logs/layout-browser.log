@@ -1,0 +1,120 @@
+PASS  boots to the title menu  (menu/title)
+PASS  title has Play, Missions, Free Roam, Garage, Settings, Credits  (CITY | RACER | STREET MISSIONS · TIME TRIALS · RACING | PLAY | MISSIONS | CAREER | FREE ROAM | GARAGE | SETTINGS | CREDITS | Press Enter or tap Play)
+PASS  no phase / prototype / debug wording visible
+PASS  no Continue button for a new player
+PASS  Missions opens the level list
+PASS  5 missions listed, 4 locked for a new player  (5 cards, 4 locked)
+PASS  locked mission cards are disabled
+PASS  Back returns to the title
+PASS  Garage shows paints; star-locked paints disabled  (7 paints, 5 locked)
+PASS  Garage paint selection is saved  (blue)
+PASS  Credits list Quaternius (CC0), three.js (MIT), Rapier (Apache-2.0)
+PASS  Settings screen opens
+PASS  Settings Done returns to the title
+PASS  Play opens the Mission 1 briefing
+PASS  mission starts on foot  (onFoot find-your-ride cam=character)
+PASS  character grounded on the pavement (y≈0.15)  (0.15)
+PASS  parked car visible nearby (5–30 m)  (16.36 m)
+PASS  engine off while parked
+PASS  no enter prompt when far from the car
+PASS  HUD on foot: driving cluster hidden
+PASS  W walks forward relative to the camera  (1.85 m, dir·cam=1.00)
+PASS  Shift runs (≈5.4 m/s)  (5.40)
+PASS  run covers more ground than walk
+PASS  diagonal input does not exceed walk speed  (1.90)
+PASS  after rotating the camera, W follows the new view direction  (1.00)
+PASS  mouse drag orbits the camera  (3.08 → 2.45)
+PASS  Space jumps and lands again  (0.18 → 0.83 → 0.18)
+PASS  character steps up the curb onto the pavement  (y -0.02 → 0.18, offset 8.22)
+PASS  character never ends up inside a building  (0 of 24 runs)
+PASS  buildings / world edge stop the character  (18 of 24 runs blocked; distances 15.31 5.27 15.07 3.11 15.32 2.72 15.88 4.26 5.61 4.29 5.40 5.13 15.88 4.40 5.65 2.96 3.75 5.44 2.88 3.31 4.83 4.45 2.83 15.59)
+PASS  no prompt outside door range  (null)
+PASS  E far from the car does nothing
+PASS  prompt appears next to the door  (Get in)
+PASS  prompt is shown in the HUD
+PASS  E starts the enter transition  (entering)
+(screenshot qa-03-entering skipped: page.screenshot: Timeout 90000ms exceeded.)
+PASS  transition ends in the driving state  (driving)
+PASS  character hidden and its controller disabled while driving
+PASS  camera switched to the chase view
+PASS  engine started
+PASS  mission advanced to the parking objective  (park)
+PASS  car did not move while getting in
+PASS  HUD switched to driving (cluster visible)
+PASS  W drives the car once inside  (50.07 km/h)
+PASS  character does not move while driving
+(screenshot qa-04-driving skipped: page.screenshot: Timeout 90000ms exceeded.)
+PASS  cannot get out at speed
+PASS  "slow down" message shown  (SLOW DOWN TO GET OUT)
+PASS  "Get out" prompt once slow  (Get out)
+PASS  E at low speed starts the exit transition  (exiting)
+PASS  exit ends on foot with the character visible and enabled
+PASS  engine off after getting out
+PASS  exit spot is next to the car (driver side preferred)  (1.61 m, candidate 0)
+PASS  exit spot is on the ground, not in a building  (-0.00)
+PASS  parked car stays where it was left
+PASS  camera back to the on-foot view
+PASS  player can get back in  (driving)
+PASS  vehicle state preserved on re-entry
+PASS  Esc pauses while driving
+PASS  simulation frozen while paused
+PASS  Resume returns to driving
+PASS  car inside the parking bay registers  (hold 0.30)
+PASS  Mission 1 completes → results screen  (complete complete)
+PASS  Mission 2 unlocked and best time saved  ({"version":2,"unlocked":2,"best":{"find-your-ride":{"time":96.33333333332915,"stars":1}},"paint":"red","credits":800,"earned":800,"car":"kestrel","owned":["kestrel"],"cars":{"kestrel":{"paint":"red","upgrades":{"engine":0,"tyres":0,"brakes":0}}},"career":{}})
+PASS  progress written to localStorage
+PASS  results show time, stars and the unlock reward  (MISSION 1 COMPLETE | FIND YOUR RIDE | ★★★ | Time | 1:36.3 | Credits earned | +800 cr | ★★★ target | 1:00.0 | Unlocked: Mission 2 — City Driving | Best time recorded | NEXT MISSION | REPLAY | MENU)
+PASS  first clear pays credits, shown on the results screen and saved  (800 cr)
+PASS  Next mission opens the Mission 2 briefing
+PASS  Mission 2 starts on foot
+PASS  Mission 2: in the car, clock started
+PASS  gate passed in the wrong direction is ignored  (nextGate 0)
+PASS  all 9 checkpoints register in order  (9/9)
+PASS  Mission 2 complete after the last checkpoint  (complete unlocked=3)
+PASS  Replay restarts on foot with the clock reset
+PASS  time limit exceeded → mission failed screen  (failed failed)
+PASS  failure screen gives the reason
+(screenshot qa-07-failed skipped: page.screenshot: Timeout 90000ms exceeded.)
+PASS  Retry restarts the mission
+PASS  Mission 2 replayable after a reload (unlock persisted)
+PASS  pause on foot
+PASS  Esc resumes on foot
+PASS  pause during the enter transition
+PASS  enter transition completes after resume
+PASS  pause during the exit transition
+PASS  exit transition completes after resume
+PASS  no stuck input after pause  (moveY 0, speed 0.00)
+PASS  Restart from the pause menu
+PASS  Quit returns to the title menu
+PASS  Continue offered once progress exists
+PASS  Mission 3 places cones, barrels, barriers, roadblocks and speed bumps  ({"cone":39,"barrel":4,"barrier":46,"roadblock":2,"bump":2})
+PASS  Mission 3: driving
+PASS  hitting cones adds time penalties  (penalty 7s, displaced 1)
+PASS  exit between barriers picks a clear spot behind / ahead of the car  (state onFoot, candidate 2)
+PASS  …and the character stands inside the passage, not in a barrier  (lateral 3.70)
+PASS  restart restores every obstacle and clears penalties  (displaced 0, penalty 0s, strikes 0)
+PASS  Mission 4: 14 ordered checkpoints and a detour  ({"cone":8,"barrel":0,"barrier":25,"roadblock":4,"bump":0})
+PASS  Mission 3 obstacles were removed (pool reused)
+PASS  Mission 5: three AI opponents on the grid  (3)
+PASS  race countdown after getting in  (countdown)
+PASS  controls locked during the countdown  (0.00 km/h)
+PASS  race starts after the countdown  (drive)
+PASS  cannot leave the car during the race
+PASS  AI opponents drive the course  (169, 165, 164)
+PASS  AI opponents complete the full lap  (3/3 finished, progress 1050, 1048, 1052)
+PASS  finishing behind the rivals fails the race  (failed)
+PASS  winning the race completes Mission 5 with standings  (complete)
+PASS  master volume changes the audio output gain  (volume 0.3, gain 0.21 (running))
+PASS  Sound Off silences the output  (0.00)
+PASS  HUD size setting applies  (1.2)
+PASS  Low quality disables particles
+PASS  settings persist across reload  ({"quality":"low","muted":false,"volume":0.3,"cameraSensitivity":1.5,"mouseSensitivity":0.6,"touchSensitivity":1.4,"hudScale":1.2,"showFps":true,"showHints":false,"touchControls":"auto"})
+PASS  progress persists across reload
+PASS  camera × mouse sensitivity scales the look speed (100 px → 0.47 rad at 1.5×0.6)  (0.47)
+PASS  hint line hidden when control hints are off
+PASS  FPS counter shown when enabled
+PASS  Free Roam: on foot with no mission panel
+PASS  no console errors or warnings during the run  (none)
+
+114 passed, 0 failed
+BROWSER QA PASSED

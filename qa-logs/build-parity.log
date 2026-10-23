@@ -1,0 +1,8 @@
+PASS  three.js chunk identical  (1343 kB)
+PASS  rapier chunk identical  (4298 kB)
+PASS  CSS identical  (28.2 kB)
+PASS  release game chunk has no hook code  (searched non-comment code for hook names)
+PASS  game code identical outside the two test-hook regions  (10836 lines compared; hook regions: release 4 lines, QA 184 lines)
+
+BUILD PARITY PASSED
+EXIT 0

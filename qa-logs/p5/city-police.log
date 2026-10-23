@@ -1,0 +1,19 @@
+PASS  free roam: one patrol car out on the road, out of sight, light bar fitted  (1 active, nearest 253 m)
+PASS  wanted meter hidden while clear
+PASS  the patrol car drives its lane  (46 m in 4 s)
+PASS  an offence nobody sees is not reported
+PASS  running a red light in front of a police car: 1 star, pursuit  (crossing 70 lane 1.75: 1★ pursuit, heat 1)
+PASS  wanted meter shows the stars and the state  ({"hidden":false,"stars":"★☆☆","state":"Pursuit"})
+PASS  2 stars bring a second unit  (2★, 2 units)
+PASS  stopping next to the police gets you busted  (state busted, nearest 6.2 m)
+PASS  busted: fined 250 cr per star, saved  (2000 → 1500 cr, "Busted! Fined 500 cr")
+PASS  wanted meter shows Busted
+PASS  after the arrest the record is clean again
+FAIL  out of sight → search; 10 s unseen → escaped  (pursuit true, search true (Searching), final pursuit, "")
+PASS  reinforcements leave once the chase is over (patrol car stays)
+PASS  missions have no police; race rivals use the pooled cars without light bars  ([[false,true,false],[false,true,false],[false,true,false]])
+PASS  back in free roam the patrol returns
+PASS  no console errors or warnings  (none)
+
+15 passed, 1 failed
+CITY QA FAILED

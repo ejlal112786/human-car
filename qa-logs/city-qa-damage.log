@@ -1,0 +1,13 @@
+PASS  damage: the car starts undamaged
+PASS  a small knock (below ~11 km/h of impact) leaves no damage
+PASS  driving into a building dents the front of the car  (sample 127: front 0.53, level 41%)
+PASS  a hard rear-right hit damages the rear and right side and breaks the right tail lamp  ({"front":0.5264204522196768,"rear":0.43124999999999986,"left":0.011422935011648469,"right":0.43124999999999986} {"headL":true,"headR":true,"tailL":false,"tailR":true})
+PASS  HUD shows the damage level  (DAMAGE 47%)
+PASS  a crushed nose costs engine power  (power ×0.75)
+PASS  garage offers a repair priced by the damage  (Your car is damaged · 84% Body work, lamps and engine restored REPAIR · 2,050 CR)
+PASS  repair charges credits and restores the car (body, lamps, power)  (5000 → 2950 cr)
+PASS  starting a mission gives a fresh, undamaged car  (before 53%)
+PASS  no console errors or warnings  (none)
+
+10 passed, 0 failed
+CITY QA PASSED

@@ -1,0 +1,37 @@
+--- wanted state machine
+PASS  unwitnessed red light does not count
+PASS  witnessed red light: 1 star, pursuit
+PASS  pedestrian hit is always reported: 4 heat = 2 stars  (heat 4)
+PASS  long pursuit escalates (+1 heat per 30 s)  (heat 5)
+PASS  stars cap at 3  (heat 17)
+PASS  out of sight → search
+PASS  still searching just before the search time
+PASS  spotted again → pursuit resumes
+PASS  unseen for 10 s → escaped, wanted level cleared
+PASS  held 3.5 s: not busted yet
+PASS  held 4 s next to a unit → busted
+PASS  fine = 250 per star, capped by credits
+PASS  after the busted hold everything resets
+PASS  driving off breaks the hold (no bust from interrupted holds)
+PASS  on foot: 3 s within 7 m of a unit → busted even while running
+
+--- pursuit driving (real physics on the road loop)
+PASS  closes on a 60 km/h target from 120 m behind  (within 15 m after 16.1 s, min 5.7 m at 34.5 s, top 120 km/h)
+PASS  then stays on its tail without running into it  (gap at the end 7.8 m, 0 respawns)
+PASS  follows the road without needing a respawn
+PASS  a stopped target is reached and busted  (min gap 6.2 m, state clear)
+PASS  the unit stops short of the stopped car (no ramming)  (min centre distance 6.2 m)
+PASS  a 200 km/h target gets away (escape)  (final gap 367 m, top 137 km/h)
+PASS  changes lane round a stopped car in its lane  (closest pass 2.8 m)
+PASS  facing the wrong way: turns round (or asks for a respawn) and catches up  (close after 13.5 s, respawn requested false)
+
+--- police system (unit management)
+PASS  free roam: one patrol car, out of sight  (1 active, 234 m away)
+PASS  patrol car has the light bar
+PASS  an offence nobody saw is ignored
+PASS  a witnessed offence counts
+PASS  2 stars → 2 units  (2★, 2 active)
+PASS  running a red light in front of a unit is detected  (heat 5 → 6)
+PASS  leaving free roam parks every unit and clears the wanted level
+
+ALL POLICE CHECKS PASSED

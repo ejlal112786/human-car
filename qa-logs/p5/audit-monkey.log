@@ -1,0 +1,207 @@
+  0 click credits:Credits                            → menu/credits
+  1 click back:Back                                  → menu/title
+  2 press KeyP                                       → menu/title
+  3 click levels:Missions                            → menu/levels
+  4 click level:1 Find Your Ride Find th             → briefing/briefing
+  5 click start:Start mission                        → onFoot
+  6 hold KeyS+KeyD 0.8s                              → onFoot
+  7 hold KeyD+Space+KeyW 1.3s                        → onFoot
+  8 qa: to the car door + E                          → driving 0 km/h
+  9 click pause:ESC                                  → paused/pause
+ 10 click quit:Quit to menu                          → menu/title
+ 11 press KeyM                                       → menu/title
+ 12 click credits:Credits                            → menu/credits
+ 13 click back:Back                                  → menu/title
+ 14 click credits:Credits                            → menu/credits
+ 15 press KeyP                                       → menu/credits
+ 16 click back:Back                                  → menu/title
+ 17 click levels:Missions                            → menu/levels
+ 18 click level:1 Find Your Ride Find th             → briefing/briefing
+ 19 click start:Start mission                        → onFoot
+ 20 hold KeyA+KeyS+KeyD+Space 1.9s                   → onFoot
+ 21 hold KeyW+KeyA+KeyS+KeyD+ShiftLeft 0.6s          → onFoot
+ 22 hold KeyA+KeyD 0.3s                              → onFoot
+ 23 qa: to the car door + E                          → driving 0 km/h
+ 24 press Enter                                      → driving 0 km/h
+ 25 hold KeyA+KeyS 0.5s                              → driving 5 km/h
+ 26 click reset:R                                    → driving 0 km/h
+ 27 hold KeyW+Space 1.1s                             → driving 0 km/h
+ 28 press KeyE                                       → exiting
+ 29 press Escape                                     → paused/pause
+ 30 click quit:Quit to menu                          → menu/title
+ 31 click settings:Settings                          → menu/settings
+ 32 press KeyP                                       → menu/settings
+ 33 click back:Done                                  → menu/title
+ 34 click play:Play                                  → briefing/briefing
+ 35 click start:Start mission                        → onFoot
+ 36 qa: to the car door + E                          → driving 0 km/h
+ 37 hold Space 1.7s                                  → driving 0 km/h
+ 38 hold KeyA+KeyS+ShiftLeft 1.9s                    → driving 14 km/h
+ 39 press Escape                                     → paused/pause
+ 40 click resume:Resume                              → driving 14 km/h
+ 41 hold KeyW+ShiftLeft+Space 2.7s                   → driving 0 km/h
+ 42 press Escape                                     → paused/pause
+ 43 click restart:Restart                            → onFoot
+ 44 hold KeyW+KeyA+Space 1.9s                        → onFoot
+ 45 qa: to the car door + E                          → driving 0 km/h
+ 46 click pause:ESC                                  → paused/pause
+ 47 click settings:Settings                          → paused/settings
+ 48 click back:Done                                  → paused/pause
+ 49 click quit:Quit to menu                          → menu/title
+ 50 click free:Free Roam                             → onFoot
+ 51 qa: to the car door + E                          → driving 0 km/h
+ 52 click reset:R                                    → driving 0 km/h
+ 53 click map:N                                      → paused/map
+ 54 click mapdest:                                   → driving 0 km/h
+ 55 hold KeyA+ShiftLeft+Space 0.4s                   → driving 0 km/h
+ 56 hold KeyA+KeyW 1.4s                              → driving 30 km/h
+ 57 press KeyE                                       → driving 37 km/h
+ 58 hold KeyA+ShiftLeft+Space 1s                     → driving 15 km/h
+ 59 click map:N                                      → paused/map
+ 60 click mapdest:                                   → driving 12 km/h
+ 61 click pause:ESC                                  → paused/pause
+ 62 press KeyP                                       → driving 12 km/h
+ 63 hold nothing 2.1s                                → driving 0 km/h
+ 64 press KeyE                                       → exiting
+ 65 click map:N                                      → onFoot
+ 66 hold KeyA+Space+KeyW 2.3s                        → onFoot
+ 67 hold KeyW+KeyA+KeyD+ShiftLeft+Space 2.6s         → onFoot
+ 68 qa: to the car door + E                          → driving 0 km/h
+ 69 hold KeyA+KeyW 1.3s                              → driving 0 km/h
+ 70 hold ShiftLeft 1.8s                              → driving 0 km/h
+ 71 hold KeyS+ShiftLeft+Space 1.5s                   → driving 0 km/h
+ 72 hold KeyW+ShiftLeft 1.2s                         → driving 0 km/h
+ 73 hold KeyD+Space+KeyW 0.4s                        → driving 0 km/h
+ 74 hold KeyW+KeyS+KeyD+ShiftLeft+Space 1.9s         → driving 0 km/h
+ 75 hold KeyW+KeyS+Space 0.3s                        → driving 0 km/h
+ 76 click map:N                                      → paused/map
+ 77 click mapdest:                                   → driving 0 km/h
+ 78 hold KeyW+ShiftLeft+Space 1.9s                   → driving 0 km/h
+ 79 hold ShiftLeft+Space 0.4s                        → driving 0 km/h
+ 80 hold KeyW 0.4s                                   → driving 0 km/h
+ 81 click mute:M                                     → driving 0 km/h
+ 82 hold KeyW+ShiftLeft 1.2s                         → driving 0 km/h
+ 83 hold KeyW 2.5s                                   → driving 0 km/h
+ 84 hold KeyA+KeyS+KeyD 1.5s                         → driving 15 km/h
+ 85 hold KeyD+Space+KeyW 1.3s                        → driving 0 km/h
+ 86 hold KeyW 1.1s                                   → driving 27 km/h
+ 87 press KeyE                                       → driving 0 km/h
+ 88 hold KeyW+KeyA+KeyS+ShiftLeft 0.4s               → driving 0 km/h
+ 89 hold nothing 0.5s                                → driving 0 km/h
+ 90 hold KeyA+ShiftLeft 2.8s                         → driving 0 km/h
+ 91 hold KeyD+KeyW 0.9s                              → driving 0 km/h
+ 92 hold KeyS+Space 0.4s                             → driving 0 km/h
+ 93 hold KeyW+KeyS+ShiftLeft 2.5s                    → driving 0 km/h
+ 94 hold KeyW+ShiftLeft+Space 0.8s                   → driving 0 km/h
+ 95 hold KeyA+Space 0.5s                             → driving 0 km/h
+ 96 hold KeyA+KeyS+KeyD 2.7s                         → driving 21 km/h
+ 97 hold KeyW+KeyS+KeyD+ShiftLeft 2.7s               → driving 9 km/h
+ 98 press KeyN                                       → paused/map
+ 99 click mapdest:                                   → driving 9 km/h
+100 click map:N                                      → paused/map
+101 click mapdest:                                   → driving 8 km/h
+102 hold Space+KeyW 1.4s                             → driving 0 km/h
+103 hold KeyS 2.7s                                   → driving 19 km/h
+104 click map:N                                      → paused/map
+105 click mapdest:                                   → driving 19 km/h
+106 hold KeyA+KeyD+ShiftLeft+Space 2.3s              → driving 0 km/h
+107 hold KeyD+Space+KeyW 1.6s                        → driving 0 km/h
+108 hold KeyA+Space+KeyW 2.1s                        → driving 0 km/h
+109 hold ShiftLeft 1.5s                              → driving 0 km/h
+110 hold KeyD+KeyW 0.7s                              → driving 16 km/h
+111 hold KeyA+Space 1.6s                             → driving 0 km/h
+112 hold KeyW 0.4s                                   → driving 10 km/h
+113 hold ShiftLeft+KeyW 1.6s                         → driving 1 km/h
+114 press KeyE                                       → exiting
+115 click mute:M                                     → onFoot
+116 click mute:M                                     → onFoot
+117 hold KeyW 1.3s                                   → onFoot
+118 hold KeyS+KeyD+Space 0.9s                        → onFoot
+119 hold KeyA+KeyD+ShiftLeft+KeyW 0.6s               → onFoot
+120 hold KeyS+ShiftLeft 0.9s                         → onFoot
+121 qa: to the car door + E                          → onFoot
+122 qa: to the car door + E                          → onFoot
+123 qa: to the car door + E                          → onFoot
+124 hold KeyW+KeyA+ShiftLeft 1.1s                    → onFoot
+125 hold KeyS+ShiftLeft 2.8s                         → onFoot
+126 hold KeyS 1.9s                                   → onFoot
+127 qa: to the car door + E                          → onFoot
+128 hold KeyW+KeyA+KeyD+Space 1.2s                   → onFoot
+129 qa: to the car door + E                          → onFoot
+130 hold ShiftLeft+KeyW 1.9s                         → onFoot
+131 qa: to the car door + E                          → onFoot
+132 hold Space+KeyW 1.1s                             → onFoot
+133 hold ShiftLeft 2.1s                              → onFoot
+134 qa: to the car door + E                          → onFoot
+135 click map:N                                      → paused/map
+136 click mapdest:                                   → onFoot
+137 click mute:M                                     → onFoot
+138 hold KeyW+KeyD+Space 0.7s                        → onFoot
+139 hold KeyS+KeyD+ShiftLeft 1.9s                    → onFoot
+140 qa: to the car door + E                          → onFoot
+141 hold KeyW 2s                                     → onFoot
+142 hold KeyW 0.8s                                   → onFoot
+143 hold KeyW+KeyA+KeyD 1.8s                         → onFoot
+144 qa: to the car door + E                          → onFoot
+145 hold KeyW+KeyS+Space 1.7s                        → onFoot
+146 hold KeyW+KeyA 2.5s                              → onFoot
+147 hold KeyW+KeyS+KeyD+ShiftLeft+Space 1.8s         → onFoot
+148 qa: to the car door + E                          → onFoot
+149 qa: to the car door + E                          → onFoot
+150 hold KeyA+KeyW 2.6s                              → onFoot
+151 hold KeyA+ShiftLeft 2.7s                         → onFoot
+152 qa: to the car door + E                          → onFoot
+153 click pause:ESC                                  → paused/pause
+154 press KeyN                                       → paused/pause
+155 press Escape                                     → onFoot
+156 hold KeyW+KeyA+KeyD 2.7s                         → onFoot
+157 click map:N                                      → paused/map
+158 click mapdest:                                   → onFoot
+159 hold KeyS+KeyD+ShiftLeft 1.7s                    → onFoot
+160 hold KeyA+KeyD+KeyW 2.6s                         → onFoot
+161 qa: to the car door + E                          → onFoot
+162 hold Space 2.4s                                  → onFoot
+163 hold KeyW+KeyA 1.7s                              → onFoot
+164 hold KeyS 1.3s                                   → onFoot
+165 hold KeyA+ShiftLeft 1.5s                         → onFoot
+166 hold KeyW+ShiftLeft 1.8s                         → onFoot
+167 click map:N                                      → paused/map
+168 click mapdest:                                   → onFoot
+169 qa: to the car door + E                          → onFoot
+170 click map:N                                      → paused/map
+171 click mapclear:Clear route                       → onFoot
+172 click map:N                                      → paused/map
+173 click mapdest:                                   → onFoot
+174 hold KeyS+KeyD 2.4s                              → onFoot
+175 qa: to the car door + E                          → onFoot
+176 hold KeyW+KeyS+KeyD+ShiftLeft 2.8s               → onFoot
+177 hold KeyW+KeyA 2.3s                              → onFoot
+178 hold KeyA+KeyW 2.1s                              → onFoot
+179 click map:N                                      → paused/map
+180 click mapdest:Mission 3: City DrivingL           → onFoot
+181 hold KeyA+KeyS+KeyD+ShiftLeft 1.1s               → onFoot
+182 qa: to the car door + E                          → onFoot
+183 qa: to the car door + E                          → onFoot
+184 click map:N                                      → paused/map
+185 click mapdest:                                   → onFoot
+186 hold KeyS+ShiftLeft 0.5s                         → onFoot
+187 hold nothing 2.7s                                → onFoot
+188 hold KeyW+KeyA+KeyS 1.8s                         → onFoot
+189 hold Space+KeyW 1.9s                             → onFoot
+190 hold ShiftLeft+KeyW 2.2s                         → onFoot
+191 click pause:ESC                                  → paused/pause
+192 click settings:Settings                          → paused/settings
+193 click back:Done                                  → paused/pause
+194 click resume:Resume                              → onFoot
+195 qa: to the car door + E                          → onFoot
+196 hold KeyA+KeyS+KeyD 0.7s                         → onFoot
+197 hold KeyW+KeyD+ShiftLeft+Space 1.3s              → onFoot
+198 click pause:ESC                                  → paused/pause
+199 press KeyN                                       → paused/pause
+
+seed 1, 200 steps, mouse+keyboard 960×540
+states: {"menu":17,"briefing":3,"onFoot":85,"driving":64,"paused":28,"exiting":3}
+screens: {"credits":4,"title":9,"levels":2,"briefing":3,"pause":13,"settings":4,"map":13}
+actions: {"hold":93,"qa:":24,"press":18,"click map":13,"click mapdest":12,"click back":6,"click pause":6,"click mute":4,"click credits":3,"click start":3,"click quit":3,"click settings":3,"click levels":2,"click level":2,"click reset":2,"click resume":2,"click play":1,"click restart":1,"click free":1,"click mapclear":1}
+
+MONKEY QA PASSED

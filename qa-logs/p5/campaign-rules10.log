@@ -1,0 +1,83 @@
+--- structure and progression
+PASS  15 missions  (15)
+PASS  ids unique and save-safe
+PASS  15 distinct mission kinds  (tutorial,school,checkpoints,parking,obstacles,timetrial,traffic,speed,race,delivery,drift,escape,advanced,circuit,gp)
+PASS  every kind has a label, titles unique
+PASS  numbers follow the campaign order
+PASS  chapters cover the campaign in order
+PASS  a reward per mission, generally rising
+PASS  every mission has objectives, tips and a finish condition
+PASS  every mission can fail (time limit or race)
+PASS  timed missions: star times inside the limit
+PASS  star gates are reachable
+PASS  mission start markers are at least 20 m apart  (22.8 m)
+PASS  new save: only mission 1 is open
+PASS  clearing a mission opens the next and pays
+PASS  star gate: Circuit Championship needs 24 mission stars  (Needs 24 mission stars (you have 14))
+PASS  enough stars open it
+PASS  drift best keeps the highest score
+PASS  old 5-mission save: everything it had unlocked stays unlocked  (unlocked 9)
+PASS  old save with 2 unlocked opens City Driving (and the new mission before it)
+PASS  new layout saves round-trip unchanged
+PASS  corrupt mission entries are dropped / clamped
+
+--- rules (synthetic inputs)
+PASS  cargo: knocks reduce integrity, 0 % fails the delivery  (58→16→0)
+PASS  parking: 6 bumps above 1.2 m/s end the test
+PASS  rush hour: a red light adds 4 s without a strike
+PASS  rush hour: hitting a pedestrian costs a double penalty
+
+--- every mission: completed by the test driver
+PASS  1. Find Your Ride (Find the car) completed in a Kestrel GT L0  (33.5 s, 3★)
+PASS  2. Driving School (Driving school) completed in a Kestrel GT L0  (62.3 s, 3★)
+PASS  3. City Driving (Checkpoint run) completed in a Kestrel GT L0  (27.7 s, 3★)
+PASS  4. Precision Parking (Parking) completed in a Kestrel GT L0  (68.7 s, 3★)
+PASS  5. Obstacle Course (Obstacles) completed in a Kestrel GT L0  (41.4 s, 3★)
+PASS  6. Time Trial (Time trial) completed in a Kestrel GT L0  (73.2 s, 3★)
+PASS  7. Rush Hour (Traffic) completed in a Kestrel GT L0  (75.7 s, 2★, Red lights run 1)
+PASS  8. Speed Trap (Speed) completed in a Kestrel GT L0  (17.3 s, 3★, Section 1 109 km/h ✓, Section 2 125 km/h ✓)
+PASS  9. Street Race (Race) completed in a Kestrel GT L1  (70.0 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (0 rival respawns)
+PASS     rivals' finishes come from crossing all 12 checkpoints in order  (Viper 11/12, Blaze 11/12, Nova 11/12)
+PASS  10. Fragile Cargo (Delivery) completed in a Kestrel GT L1  (43.1 s, 3★, Cargo condition 100%)
+PASS  11. Drift King (Drift) completed in a Kestrel GT L1  (21.5 s, 2★, score 991, Drift score 991)
+PASS  12. Hot Pursuit (Police escape) completed in a Kestrel GT L2  (89.2 s, 2★)
+PASS  13. The Gauntlet (Obstacles+) completed in a Kestrel GT L2  (58.1 s, 3★)
+PASS  14. Circuit Championship (Circuit race) completed in a Brute V8 L2  (207.1 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (0 rival respawns)
+PASS     rivals' finishes come from crossing all 36 checkpoints in order  (Ace 35/36, Mako 33/36, Jinx 35/36)
+      Grand Prix wins: 1/3 (vortex L2: lost, vortex L3: P1 154.9 s, apex L0: P1 134.4 s)
+PASS     Grand Prix won cleanly in at least 1 of 3 late-game cars  (1/3)
+PASS  15. City Grand Prix (Grand Prix) completed in a Apex R L0  (134.4 s, 3★, P1, Position 1st of 4)
+PASS     rivals drove without getting stuck  (0 rival respawns)
+PASS     rivals' finishes come from crossing all 24 checkpoints in order  (Zero 22/24, Halo 21/24, Rift 21/24)
+
+--- every mission: can fail
+PASS  1. Find Your Ride fails  (failed: Time’s up after 180.0 s)
+PASS  2. Driving School fails  (failed: Time’s up after 240.0 s)
+PASS  3. City Driving fails  (failed: Time’s up after 60.0 s)
+PASS  4. Precision Parking fails  (failed: Time’s up after 180.0 s)
+PASS  5. Obstacle Course fails  (failed: Time’s up after 150.0 s)
+PASS  6. Time Trial fails  (failed: Time’s up after 125.0 s)
+PASS  7. Rush Hour fails  (failed: Time’s up after 110.0 s)
+PASS  8. Speed Trap fails  (failed: Too slow through the speed sections after 27.2 s)
+PASS  9. Street Race: rivals pass the parked player car without ramming it  (moved 0.00 m)
+PASS  9. Street Race fails  (failed: A rival took the win — only a win counts after 76.7 s)
+PASS  10. Fragile Cargo fails  (failed: Time’s up after 85.0 s)
+PASS  11. Drift King fails  (failed: Not enough drift points — 0 of 600 after 17.1 s)
+PASS  12. Hot Pursuit fails  (failed: Busted — the police caught you after 8.3 s)
+PASS  13. The Gauntlet fails  (failed: Time’s up after 170.0 s)
+PASS  14. Circuit Championship: rivals pass the parked player car without ramming it  (moved 0.00 m)
+PASS  14. Circuit Championship fails  (failed: 3 rivals finished ahead — top 3 needed after 220.5 s)
+PASS  15. City Grand Prix: rivals pass the parked player car without ramming it  (moved 0.00 m)
+PASS  15. City Grand Prix fails  (failed: A rival took the win — only a win counts after 136.3 s)
+
+--- race rules: checkpoints, difficulty, rubber band
+PASS  a rival that skips a checkpoint is disqualified (no finish, no place)  (Viper: dsq true, finished false, gate 0/12)
+PASS     standings list it last as DSQ; the race goes on to a valid winner  (Blaze 75.1, Nova, You, Viper DSQ)
+PASS  rubber band is off by default: no rival pace change
+PASS     skill is capped at 1 (no super-human rivals)  (0.832 0.801 0.770)
+PASS  difficulty presets change the rivals' pace (easy slower > normal > hard faster)  (winning rival: easy 78.0 s, normal 76.7 s, hard 75.9 s)
+PASS  rubber band (when enabled) slows rivals that are far ahead, within its limit  (winning rival 78.1 s vs 76.7 s; adjust -0.050 -0.050 -0.050)
+
+CAMPAIGN TEST: ALL PASSED

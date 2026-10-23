@@ -1,0 +1,129 @@
+PASS  title screen: the city behind the menu is alive (traffic moves, people walk)  (18 cars moved, 24 pedestrians, screen title, state menu)
+PASS  free roam: traffic is on and populated  (18 cars)
+PASS  traffic drives (most cars moved > 20 m in 20 s)  (18/18)
+PASS  traffic: no two cars on top of each other  (0)
+PASS  traffic: signals cycle and nobody runs a red light  (0 violations; rrgrg)
+PASS  signal 0 forced to walk: pedestrians walk, cars red  ({"car":"red","ped":"walk"})
+PASS  traffic never drives into the parked player car  (0 cars within 3 m)
+(screenshot city-01-crossing skipped: page.screenshot: Timeout 150000ms exceeded.)
+PASS  traffic re-flows around the player after moving across town  (14 cars within 150 m)
+PASS  missions run without ambient traffic  (0 cars)
+PASS  pedestrians are drawn near the player  (23 visible, nearest 14.5 m)
+PASS  crowd is GPU-instanced: all visible pedestrians in ≤ 2 instanced draws  (pedestrians-near ×6 (shadow), pedestrians-far ×17)
+PASS  crowd shows several outfits from the atlas  (6 outfits)
+PASS  pedestrian poses animate over time  (23/23 changed in 5 s real time)
+PASS  nearby pedestrians between clips use the exact pose blend  (68 exact poses seen in 5.0 s (rows from 379), 0 invalid, 0 beyond range)
+PASS  free roam: pedestrians populate the sidewalks  (24 pedestrians)
+PASS  pedestrians never stand inside a building (2 min, sampled every 10 s)  (0)
+PASS  pedestrians are only on the road when using a crossing  (0 sampled, 0 counted)
+PASS  pedestrians walk and keep walking  (24/24 moving)
+PASS  signals: crossings only on WALK, road clear before cars get green  (5 crossings started, 0 bad, 0 at green)
+PASS  pedestrians keep clear of furniture and each other  (clear 0.28 m, sep 0.75 m at modes 4/1 lat 8.00/8.75 far true/true s 140.6/140.5)
+PASS  missions run without pedestrians  (0)
+PASS  context restore on the title: backdrop frame identical (city, traffic, crowd)  (0 pixels differ; 24 people visible; screen title -> title)
+PASS  context restore on the live title: no WebGL errors, title usable, no in-game toast  (0 WebGL errors; screen title; primary button true; toast false; 24 people visible after 4 frames)
+PASS  title menu works after a restore  (continue -> screen briefing, state briefing)
+PASS  context restore: the same frame is drawn again (crowd, environment, atlases)  (0 pixels differ; 11 / 11 people mid-blend before / after)
+PASS  context restore: no WebGL calls on objects of the lost context  (none)
+PASS  context restore: game paused and resumable  (paused)
+PASS  garage: four cars listed, starter car marked as driving  (4 cards, driving "Kestrel GT")
+PASS  garage: stats, upgrades and paint shown for the owned car
+PASS  garage: browsing a car previews its body on the stage without changing the driven car  (style hatch, driving kestrel)
+PASS  garage: unaffordable car shows how many credits are missing (buy disabled)  (3,000 cr short)
+PASS  garage: star-locked car explains the requirement  (Needs 6 ★ · you have 0)
+PASS  leaving the garage puts the driven car back on the stage  (coupe)
+PASS  buying a car: credits charged, car owned, selected and driving with its own handling  (vehicle pip, mass 1080, credits 37000)
+PASS  purchase saved to both the main save and its backup
+PASS  engine upgrade: charged, level shown, and the car really gets stronger  (drive force 7000 → 7420, credits 35950)
+PASS  paint applies to this car only
+PASS  switching between owned cars swaps handling, body and paint
+PASS  after a reload the bought car, its upgrade and paint are still there  (vehicle pip, credits 35950)
+PASS  corrupted save: progress recovered from the backup copy
+PASS  unreadable saves: the game still starts with a clean starter profile
+PASS  in a mission the cars accelerate differently (Vortex > Kestrel > Pip after 3 s full throttle)  (Pip 62, Kestrel 74, Vortex 102 km/h)
+PASS  phone portrait: garage fits the screen width, buttons large enough to tap  ({"panelW":370,"left":10,"right":380,"minH":38,"docW":390})
+PASS  phone portrait: upgrade button works by touch  (tyres 1)
+PASS  free roam: mission starts, career events and the garage are marked in the city  (13 places)
+PASS  no marker is inside a building  (none)
+PASS  no prompt at the free-roam spawn point  (null)
+PASS  N opens the city map and pauses the game  (map paused canvas 568,346)
+PASS  map lists every destination with a tappable pin; locked missions say why  (13 pins, 13 entries, "Locked — complete Mission 2 first")
+PASS  choosing a destination closes the map, resumes play and plots a route  (state onFoot, dest garage, 151 route points)
+PASS  route starts at the player and ends at the garage
+PASS  HUD shows the destination and road distance  (▲Garage900 m)
+PASS  tapping the minimap opens the map
+PASS  Clear route removes the route and the HUD hint
+PASS  HUD map button + map pin also set the destination
+PASS  arriving clears the route  (dest null)
+PASS  stopped at the garage: prompt to open it  (Open garage)
+PASS  E opens the garage right there (game paused)
+PASS  city garage previews cars on the street
+PASS  Done returns to driving with the selected car  (driving coupe)
+PASS  driving away from the route shows "Turn around"; driving along it does not  (one way false, other way true)
+PASS  standing at an unlocked mission start offers to start it  (Start Mission 2: City Driving)
+PASS  E opens that mission's briefing
+PASS  a locked mission start says so and does nothing  (Mission 3 is locked)
+PASS  during a mission: no city markers, the map shows the objective without destinations
+PASS  Esc closes the map and resumes
+PASS  phone landscape: map button visible on the touch HUD  ({"x":106,"y":10,"width":40,"height":40})
+PASS  phone landscape: map fits the screen with a usable map area  ({"top":16,"bottom":374,"right":828,"canvasH":240,"docW":844})
+PASS  phone landscape: tapping a destination sets the route
+PASS  damage: the car starts undamaged
+PASS  a small knock (below ~11 km/h of impact) leaves no damage
+PASS  driving into a building dents the front of the car  (sample 127: front 0.53, level 41%)
+PASS  a hard rear-right hit damages the rear and right side and breaks the right tail lamp  ({"front":0.5264204522196768,"rear":0.43124999999999986,"left":0.011422935011648469,"right":0.43124999999999986} {"headL":true,"headR":true,"tailL":false,"tailR":true})
+PASS  HUD shows the damage level  (DAMAGE 47%)
+PASS  a crushed nose costs engine power  (power ×0.75)
+PASS  garage offers a repair priced by the damage  (Your car is damaged · 84% Body work, lamps and engine restored REPAIR · 2,050 CR)
+PASS  repair charges credits and restores the car (body, lamps, power)  (5000 → 2950 cr)
+PASS  starting a mission gives a fresh, undamaged car  (before 53%)
+PASS  free roam: one patrol car out on the road, out of sight, light bar fitted  (1 active, nearest 253 m)
+PASS  wanted meter hidden while clear
+PASS  the patrol car drives its lane  (46 m in 4 s)
+PASS  an offence nobody sees is not reported
+PASS  running a red light in front of a police car: 1 star, pursuit  (crossing 70 lane 1.75: 1★ pursuit, heat 1)
+PASS  wanted meter shows the stars and the state  ({"hidden":false,"stars":"★☆☆","state":"Pursuit"})
+PASS  2 stars bring a second unit  (2★, 2 units)
+PASS  stopping next to the police gets you busted  (state busted, nearest 6.2 m)
+PASS  busted: fined 250 cr per star, saved  (2000 → 1500 cr, "Busted! Fined 500 cr")
+PASS  wanted meter shows Busted
+PASS  after the arrest the record is clean again
+PASS  out of sight → search; 10 s unseen → escaped  (pursuit true, search true (Searching), final clear, "You lost the police")
+PASS  reinforcements leave once the chase is over (patrol car stays)
+PASS  missions have no police; race rivals use the pooled cars without light bars  ([[false,true,false],[false,true,false],[false,true,false]])
+PASS  back in free roam the patrol returns
+PASS  audio running in free roam; city bed audible with traffic around  (running, bed 0.160)
+PASS  a passing car is heard up close (louder than far away)  (near 0.112 vs before 0.020)
+PASS  pedestrian crossing ticks during WALK and stops on green  (5 ticks in walk, 0 after green)
+PASS  gear changes are audible (shift cue on the upshift, engine on)  (1 upshift cue(s), gear 2, 89 km/h)
+PASS  hidden page on the title: audio suspended, resumes when visible  (running -> hidden suspended -> visible running)
+PASS  hidden page on the briefing: audio suspended, resumes when visible  (running -> hidden suspended -> visible running)
+PASS  hidden page in gameplay: pauses and goes silent, stays paused when visible again  (running -> hidden suspended/paused -> visible suspended/paused)
+PASS  Career screen: 7 events in 3 tiers, only the first open, locked ones say why  (7 cards, 1 open, "Clear Harbor Sprint first")
+PASS  Career screen shows credits, rewards and star total; no debug text
+PASS  event briefing: career tier, reward, limit, star times; the city previews the event layout  (briefing, id harbor-sprint)
+PASS  briefing Back returns to the Career screen
+PASS  Escape = Back: briefing → Career → title (state back to menu)  (career → title)
+PASS  Start event: on foot at the event, career run active, police off  (onFoot harbor-sprint)
+PASS  driving through every checkpoint completes the event  (6/6 gates (6), complete)
+PASS  result: stars, credits paid and saved, next event unlocked  (stars 3, credits 2800)
+PASS  Next event opens the Rookie Cup briefing with rivals and their cars  (Dash (Kestrel GT), Rook (Kestrel GT))
+PASS  career progress and credits survive a reload  (credits 2800)
+PASS  rivals drive their catalogue cars
+PASS  finishing 3rd in the Rookie Cup fails: "top 2 needed"  (failed "You finished 3rd — top 2 needed")
+PASS  Pro Duel open (replay); its rival races a Brute; Grand Loop asks for 8 stars  ({"car":"brute","style":"muscle"} "Needs 8 career stars (you have 7)")
+PASS  pause → Quit from a career event: back on the title, career run cleared  (title, id null)
+PASS  free roam: the pooled cars are stock patrol cars again  ([{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"},{"car":"kestrel","style":"coupe"}])
+PASS  career markers in the city: locked one explains, open one starts the briefing with E  ("Elite Night Run: Locked — Clear Grand Loop first" / "Enter Harbor Sprint (Career · Rookie sprint)" → briefing)
+PASS  phone: Career list fits the screen width and scrolls vertically  ({"w":358,"sw":356,"cw":356,"sh":1181,"ch":810,"vw":390})
+PASS  phone: touch "Start" at a career marker opens the briefing; tapping Start event begins it  (label Start, screen briefing, state onFoot, career harbor-sprint)
+PASS  two tabs: both start from the same save  (A {"credits":10000,"owned":"kestrel","car":"kestrel","engine":0} B {"credits":10000,"owned":"kestrel","car":"kestrel","engine":0})
+PASS  two tabs: the other tab adopts a purchase at once (credits, car, garage view)  (tab B {"credits":7000,"owned":"kestrel,pip","car":"pip","engine":0}; buy button false; owned view true)
+PASS  two tabs: a later change in the other tab keeps the purchase (no lost update, no refund)  (stored {"credits":5500,"owned":"kestrel,pip","car":"pip","engine":1}; tab A {"credits":5500,"owned":"kestrel,pip","car":"pip","engine":1})
+PASS  two tabs: both tabs agree on the save  (tab B 5500 vs stored 5500)
+PASS  two tabs: settings changed in one tab follow in the other (volume shown there too)  (tab B volume 0.3, slider label 30%)
+PASS  two tabs: a later setting in the other tab keeps the first change  (stored {"volume":0.3,"muted":true}; tab A {"volume":0.3,"muted":true})
+PASS  no console errors or warnings  (none)
+
+125 passed, 0 failed
+CITY QA PASSED

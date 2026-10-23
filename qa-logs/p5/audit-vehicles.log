@@ -1,0 +1,38 @@
+PASS  starter car (Kestrel GT) uses exactly the original chassis and engine parameters  (deep-equal; ride height 0.5634 vs 0.56)
+  Kestrel GT    RWD       0-100 4.40 s | 30 s 230 | vmax 236 km/h | 100-0 35.6 m | skidpad 1.14 g | roll 0.35° | slide 0.26 m/s | ride 0.569 m | stats 345 kW 1350 kg ~236 km/h
+  Pip GTi       FWD       0-100 5.25 s | 30 s 186 | vmax 191 km/h | 100-0 32.5 m | skidpad 1.23 g | roll 0.80° | slide 0.09 m/s | ride 0.569 m | stats 213 kW 1080 kg ~192 km/h
+  Brute V8      RWD       0-100 4.20 s | 30 s 233 | vmax 234 km/h | 100-0 43.7 m | skidpad 1.06 g | roll 0.46° | slide 0.39 m/s | ride 0.552 m | stats 383 kW 1620 kg ~236 km/h
+  Vortex RS     AWD 35:65 0-100 2.95 s | 30 s 290 | vmax 298 km/h | 100-0 25.3 m | skidpad 1.36 g | roll 0.50° | slide 0.40 m/s | ride 0.584 m | stats 534 kW 1290 kg ~296 km/h
+  Meridian LX   FWD       0-100 7.28 s | 30 s 180 | vmax 192 km/h | 100-0 43.5 m | skidpad 1.06 g | roll 0.89° | slide 0.04 m/s | ride 0.535 m | stats 241 kW 1480 kg ~193 km/h
+  Atlas XR      AWD 45:55 0-100 6.30 s | 30 s 184 | vmax 195 km/h | 100-0 41.0 m | skidpad 1.00 g | roll 0.93° | slide 0.11 m/s | ride 0.618 m | stats 314 kW 2050 kg ~195 km/h
+  Ridgeback 4x4 AWD 50:50 0-100 6.00 s | 30 s 173 | vmax 178 km/h | 100-0 41.4 m | skidpad 0.90 g | roll 0.99° | slide 0.12 m/s | ride 0.693 m | stats 272 kW 1820 kg ~179 km/h
+  Apex R        RWD       0-100 2.68 s | 30 s 275 | vmax 281 km/h | 100-0 19.1 m | skidpad 1.57 g | roll 0.27° | slide 0.43 m/s | ride 0.532 m | stats 471 kW 1060 kg ~280 km/h
+PASS  acceleration differs: Vortex quickest, Pip slowest, Brute beats the Kestrel  (0-100: V 2.95 B 4.20 K 4.40 P 5.25 s)
+PASS  0-100 spread is large (slowest at least 1.6x the quickest)  (1.78x)
+PASS  speed: Vortex fastest, Pip slowest after 30 s flat out  (V 290 B 233 K 230 P 186 km/h)
+PASS  braking: Vortex stops shortest, heavy Brute longest  (V 25.3 K 35.6 P 32.5 B 43.7 m)
+PASS  cornering grip: Vortex highest, Brute lowest  (V 1.36 K 1.14 P 1.23 B 1.06 g)
+PASS  balance: the Brute slides its tail far more under power than the planted Pip  (slide B 0.39 K 0.26 P 0.09 V 0.40 m/s)
+PASS  every car stays upright through the handling tests  (kestrel 1.00, pip 1.00, brute 1.00, vortex 1.00, meridian 1.00, atlas 1.00, ridgeback 1.00, apex 1.00)
+PASS  garage top-speed figure within 6% of the measured top speed for every car  (kestrel 0.1%, pip 0.7%, brute 1.0%, vortex -0.6%, meridian 0.8%, atlas 0.1%, ridgeback 0.3%, apex -0.4%)
+PASS  garage top-speed figures rank like the measured top speeds (where they differ by >4%)  (vortex>apex>kestrel>brute>atlas>meridian>pip>ridgeback)
+PASS  garage acceleration figures rank like the measured 0-100 times  (apex>vortex>brute>kestrel>pip>ridgeback>atlas>meridian vs apex>vortex>brute>kestrel>pip>ridgeback>atlas>meridian)
+PASS  8 cars, every pair measurably different (>=8% in at least one measured figure)  (8 cars)
+PASS  vehicle classes: sports coupe, supercar, muscle, sedan, SUV, off-road, hot hatch, race car  (Sports coupe, Hot hatch, Muscle car, Supercar, Sedan, SUV, Off-roader, Race car)
+PASS  every car has its own body style  (coupe, hatch, muscle, super, sedan, suv, offroad, race)
+PASS  front-, rear- and all-wheel-drive cars exist  (RWD, FWD, AWD)
+PASS  engine force is split front/rear exactly as each drivetrain says  (kestrel 0% front, pip 100% front, brute 0% front, vortex 35% front, meridian 100% front, atlas 45% front, ridgeback 50% front, apex 0% front)
+PASS  front-drive cars do not power-oversteer: their tail slides less than every rear-drive car  (FWD 0.09/0.04 vs RWD 0.26/0.39/0.43 m/s)
+PASS  race car: quickest 0-100, most cornering grip and shortest braking of all  (0-100 2.68 s, 1.57 g, 19.1 m)
+PASS  off-roader rides highest, then the SUV; the race car lowest (settled chassis height)  (ridgeback 0.693, atlas 0.618, vortex 0.584, pip 0.569, kestrel 0.569, brute 0.552, meridian 0.535, apex 0.532)
+PASS  settled ride height matches the derived rideHeight for every car (within 2 cm)  (kestrel 0.6 cm, pip 0.6 cm, brute 0.6 cm, vortex 0.5 cm, meridian 0.7 cm, atlas 0.7 cm, ridgeback 0.7 cm, apex 0.4 cm)
+PASS  soft SUV / off-roader lean the most in corners, the stiff race car the least  (ridgeback 0.99°, atlas 0.93°, meridian 0.89°, pip 0.80°, vortex 0.50°, brute 0.46°, kestrel 0.35°, apex 0.27°)
+PASS  off-roader has the lowest top speed  (ridgeback 178 km/h)
+PASS  sedan is the slowest to 100 km/h (comfort car)  (meridian 7.28 s)
+PASS  engine upgrade (level 3) improves acceleration  (4.40 → 3.73 s)
+PASS  tyre upgrade (level 3) improves cornering grip  (1.139 → 1.293 g)
+PASS  brake upgrade (level 3) shortens braking  (35.6 → 26.7 m)
+PASS  suspension upgrade (level 3) cuts body roll by 10%+ and lowers the car  (roll 0.35° → 0.20°, ride 0.569 → 0.547 m)
+PASS  garage shows the suspension upgrade (stiffer, lower)  (stiffness 32.0 → 46.4, clearance 14 → 12 cm)
+
+ALL VEHICLE CHECKS PASSED

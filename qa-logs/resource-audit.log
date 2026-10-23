@@ -1,0 +1,8 @@
+PASS  GPU geometries/textures/programs unchanged after 4 restart/reset/quality cycles  (geo 78 tex 24 prog 36 -> geo 78 tex 24 prog 36)
+PASS  JS heap after GC grows < 3 MB over 4 cycles  (28.0 MB -> 28.0 MB (+0.00 MB))
+PASS  physics step allocates < 16 kB per fixed step  (6329 B/step over 605 steps; 166 µs/step incl. vehicle + game logic (not asserted); 856 bodies / 940 colliders)
+PASS  no per-frame shader parameter rebuilds (shadow pass) at High quality  (getParameters 0 B over 20 frames; total 99 kB/frame (mostly three.js uniform upload))
+PASS  no page errors  (none)
+
+5/5 resource checks passed
+EXIT 0

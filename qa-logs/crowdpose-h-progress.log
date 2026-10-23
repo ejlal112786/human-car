@@ -1,0 +1,26 @@
+PASS  no save: fresh progress with the starter car
+PASS  corrupted main save: recovered from the backup copy  (backup 4321)
+PASS  ...and the main save is repaired
+PASS  v1 save migrates (missions, stars, paint kept)  (v1 unlocked 4 stars 3 paint blue)
+PASS  ...and is written as v2
+PASS  garbage: unknown cars dropped, duplicates removed, starter always owned  (kestrel,vortex)
+PASS  garbage: numbers clamped (credits, levels, upgrades, stars)  ({"engine":3,"tyres":0,"brakes":1})
+PASS  garbage: invalid paint / car / ids / times rejected
+PASS  non-object saves give a fresh start
+PASS  storage full / blocked: saving fails silently
+PASS  cannot buy without credits
+PASS  star requirement blocks the Brute V8 (6 stars) even with credits
+PASS  buying the Pip Hatch: credits deducted, car owned and selected
+PASS  cannot buy a car twice
+PASS  switching cars restores each car's own paint
+PASS  cannot select a car you do not own
+PASS  engine upgrade costs credits and raises the level  (price 1050)
+PASS  upgrades stop at level 3
+PASS  cannot upgrade a car you do not own
+PASS  a car's factory paint is always available for it
+PASS  locked paint (needs stars) is refused; unlocked paint applies to that car only
+PASS  everything persists across a reload
+PASS  first clear pays in full (+ star bonus), replays pay less, new stars add a bonus  (1230 / 530 / 230)
+PASS  credits accumulate and are saved
+
+ALL PROGRESS CHECKS PASSED
